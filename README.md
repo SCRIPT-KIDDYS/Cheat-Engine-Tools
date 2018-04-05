@@ -8,7 +8,7 @@ Cheat Engine Tools
 
 <p align="center">
 <img src="https://img.shields.io/badge/written%20in%20-C%23-orange.svg">
-<img src="https://img.shields.io/badge/license-DBAD-blue.svg>
+<img src="https://img.shields.io/badge/license-DBAD-blue.svg">
 <img src="https://img.shields.io/badge/build%20v0.1-passing-green.svg">
 </p>
 
