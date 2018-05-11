@@ -13,13 +13,18 @@ Cheat Engine Tools
 </p>
 
 ## TODO:
-1. This
-    - That
-1. Some Other Stuff
+1. Finish the "SWF Dumper".
+1. Drink Another Beer.
+1. Add Credits to people who helped.
+1. Drink Another Beer.
+1. Clean Up Some Code.
+1. Drink Another Beer.
+1. Add More Tools.
+  - Someone Say Tools?
 
 ## Usage:
 
-1. Open NAME.exe
+1. Open Cheat Engine Tools.exe
 1. Do Something
 1. Click More Buttons
 1. Drink A Beer
@@ -35,7 +40,8 @@ One Day A Link Will Be Here.
 
 ## Contributing:
 
-Let you know once the first release is out.
+If you would like to help with this project you can contact me on discord.
+Fluffer Nutter#9504
 
 ## Credits:
 
@@ -45,3 +51,4 @@ Fluffer_Nutter - Coder, Designer, Alcoholic
 
 ### __v0.1__  
 * Github Setup.
+* Half Ass Program.
