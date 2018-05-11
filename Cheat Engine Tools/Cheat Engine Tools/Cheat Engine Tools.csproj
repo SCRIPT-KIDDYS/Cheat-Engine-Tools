@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ClassFiles\ByteConverter.cs" />
     <Compile Include="ClassFiles\CEDecompile.cs" />
+    <Compile Include="ClassFiles\DLL Injector.cs" />
     <Compile Include="ClassFiles\FreeHacksDecrypt.cs" />
     <Compile Include="Forms\ByteConverter_UC.cs">
       <SubType>UserControl</SubType>
@@ -57,17 +58,29 @@
     <Compile Include="Forms\ByteConverter_UC.Designer.cs">
       <DependentUpon>ByteConverter_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CEDecompiler.cs">
+    <Compile Include="Forms\CEDecompiler_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\CEDecompiler.Designer.cs">
-      <DependentUpon>CEDecompiler.cs</DependentUpon>
+    <Compile Include="Forms\CEDecompiler_UC.Designer.cs">
+      <DependentUpon>CEDecompiler_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FreeHacks.cs">
+    <Compile Include="Forms\DLLInjector_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\FreeHacks.Designer.cs">
-      <DependentUpon>FreeHacks.cs</DependentUpon>
+    <Compile Include="Forms\DLLInjector_UC.Designer.cs">
+      <DependentUpon>DLLInjector_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FreeHacks_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FreeHacks_UC.Designer.cs">
+      <DependentUpon>FreeHacks_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Links_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Links_UC.Designer.cs">
+      <DependentUpon>Links_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainWindow.cs">
       <SubType>Form</SubType>
@@ -75,17 +88,17 @@
     <Compile Include="Forms\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SWFDumper.cs">
+    <Compile Include="Forms\SWFDumper_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\SWFDumper.Designer.cs">
-      <DependentUpon>SWFDumper.cs</DependentUpon>
+    <Compile Include="Forms\SWFDumper_UC.Designer.cs">
+      <DependentUpon>SWFDumper_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Welcome.cs">
+    <Compile Include="Forms\Welcome_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Welcome.Designer.cs">
-      <DependentUpon>Welcome.cs</DependentUpon>
+    <Compile Include="Forms\Welcome_UC.Designer.cs">
+      <DependentUpon>Welcome_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="MetroFramework\Design\Components\MetroStyleManagerDesigner.cs" />
     <Compile Include="MetroFramework\Design\Controls\MetroButtonDesigner.cs" />
@@ -259,20 +272,26 @@
     <EmbeddedResource Include="Forms\ByteConverter_UC.resx">
       <DependentUpon>ByteConverter_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CEDecompiler.resx">
-      <DependentUpon>CEDecompiler.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CEDecompiler_UC.resx">
+      <DependentUpon>CEDecompiler_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FreeHacks.resx">
-      <DependentUpon>FreeHacks.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\DLLInjector_UC.resx">
+      <DependentUpon>DLLInjector_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FreeHacks_UC.resx">
+      <DependentUpon>FreeHacks_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Links_UC.resx">
+      <DependentUpon>Links_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SWFDumper.resx">
-      <DependentUpon>SWFDumper.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SWFDumper_UC.resx">
+      <DependentUpon>SWFDumper_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Welcome.resx">
-      <DependentUpon>Welcome.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Welcome_UC.resx">
+      <DependentUpon>Welcome_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MetroFramework\Main\Controls\MetroGrid.resx">
       <DependentUpon>MetroGrid.cs</DependentUpon>

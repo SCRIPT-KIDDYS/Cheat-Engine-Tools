@@ -7,8 +7,6 @@ namespace Cheat_Engine_Tools
 {
     public partial class ByteConverter_UC : UserControl
     {
-        private Process[] MyProcess = Process.GetProcesses();
-
         public ByteConverter_UC()
         {
             InitializeComponent();
@@ -28,6 +26,7 @@ namespace Cheat_Engine_Tools
 
         private void GetListOProcesses()
         {
+            Process[] MyProcess = Process.GetProcesses();
             Array.Sort(MyProcess, (x, y) => String.Compare(x.ToString(), y.ToString()));
             for (int i = 0; i < MyProcess.Length; i++)
             {

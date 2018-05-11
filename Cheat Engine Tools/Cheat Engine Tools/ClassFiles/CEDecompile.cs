@@ -59,7 +59,13 @@ internal class CEDecompile
         }
         else
         {
-            MessageBox.Show("Something went wrong. Here could be the reasons" + Environment.NewLine + "1: Trainer is not encrypted." + Environment.NewLine + "2: Trainer decryption went wrong" + Environment.NewLine + "3: Trainer is using the old compression method.", "ERROR");
+            MessageBox.Show(
+                "Something went wrong. Here could be the reasons" + Environment.NewLine + 
+                "1: Trainer is not encrypted." + Environment.NewLine + 
+                "2: Trainer decryption went wrong" + Environment.NewLine + 
+                "3: Trainer is using the new encryption method.", 
+                "ERROR");
+
             return false;
         }
 

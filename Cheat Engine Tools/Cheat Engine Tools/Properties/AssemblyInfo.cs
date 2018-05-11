@@ -42,31 +42,16 @@ using System.Runtime.InteropServices;
 internal static class MetroFrameworkDesignAssembly
 {
     internal const string Title = "MetroFramework.Design.dll";
-    internal const string Version = MetroFrameworkAssembly.Version;
-    internal const string Description = MetroFrameworkAssembly.Description;
-    internal const string Copyright = MetroFrameworkAssembly.Copyright;
-    internal const string Company = MetroFrameworkAssembly.Company;
-    internal const string Product = MetroFrameworkAssembly.Product;
 }
 
 internal static class MetroFrameworkDesignAssemblyFonts
 {
     internal const string Title = "MetroFramework.Fonts.dll";
-    internal const string Version = MetroFrameworkAssembly.Version;
-    internal const string Description = MetroFrameworkAssembly.Description;
-    internal const string Copyright = MetroFrameworkAssembly.Copyright;
-    internal const string Company = MetroFrameworkAssembly.Company;
-    internal const string Product = MetroFrameworkAssembly.Product;
 }
 
 internal static class MetroFrameworkAssembly
 {
     internal const string Title = "MetroFramework.dll";
-    internal const string Version = "1.0.0.0";
-    internal const string Description = "Metro UI Framework for .NET WinForms";
-    internal const string Copyright = "Copyright \x00a9 2011 Sven Walter, Dennis Magno.  All rights reserved.";
-    internal const string Company = "Sven Walter, Dennis Magno";
-    internal const string Product = "MetroFramework";
 }
 
 namespace MetroFramework
