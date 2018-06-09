@@ -12,7 +12,7 @@ namespace Cheat_Engine_Tools.Forms
         {
             InitializeComponent();
             string TempText = null;
-            String DownloadString = "http://cyberterminators.co/details.xml";
+            String DownloadString = "http://cyberterminators.co/details-v2.xml";
             XmlDocument XDocument = new XmlDocument();
             XDocument.Load(DownloadString);
             XmlElement Root = XDocument.DocumentElement;
