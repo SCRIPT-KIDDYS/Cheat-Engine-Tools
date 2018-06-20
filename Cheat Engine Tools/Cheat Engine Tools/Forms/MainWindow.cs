@@ -8,10 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
-
-
-// ByteConverter Size =         310, 540
-// Welcome Size =               610, 540
+using Microsoft.Win32;
 
 namespace Cheat_Engine_Tools
 {
@@ -24,12 +21,6 @@ namespace Cheat_Engine_Tools
 
         private void MetroTabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*
-            if (metroTabControl1.SelectedIndex == 0)
-                this.Size = new Size(610, 540);
-            if (metroTabControl1.SelectedIndex == 1)
-                this.Size = new Size(310, 540);
-            */
         }
     }
 }

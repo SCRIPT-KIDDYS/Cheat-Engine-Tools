@@ -25,7 +25,6 @@ namespace Cheat_Engine_Tools.Forms
             {
                 if (Regex.Matches(NameOfGame, @"[a-zA-Z]").Count == 0)
                     break;
-
                 else
                     FreeHacks_Games_ComboBox.Items.Add(NameOfGame.TrimStart('\n'));
             }
@@ -37,8 +36,13 @@ namespace Cheat_Engine_Tools.Forms
             string HTMLFormat = GameName.Replace(" ", "%20");
             WebClient Client = new WebClient();
             String DownloadedString = Client.DownloadString("http://www.cyberterminators.co/ctmt-v2/getDetails.php?gameName=" + HTMLFormat);
-            FreeHacks_Codes_TextBox.Text = FreeHacksDecrypt.DecryptStuff(DownloadedString, GameName);
-            FreeHacks_Codes_TextBox.Focus();
+
+			if (DownloadedString.Length == 0)
+				FreeHacks_Codes_TextBox.Text = "This is a manual hack";
+			else
+			FreeHacks_Codes_TextBox.Text = FreeHacksDecrypt.DecryptStuff(DownloadedString, GameName);
+
+			FreeHacks_Codes_TextBox.Focus();
         }
     }
 }

@@ -45,8 +45,8 @@ internal class FreeHacksDecrypt
     public static string Stringthing(string lala, string date, string gamename)
     {
         string final = "";
-        string poop = CharKey(lala);
-        string strOne = poop;
+        string charkey = CharKey(lala);
+        string strOne = charkey;
         string[] strArrayOne = new string[] { "" };
         strArrayOne = strOne.Split(',');
         strArrayOne = strArrayOne.Skip(1).ToArray();
@@ -95,7 +95,6 @@ internal class FreeHacksDecrypt
         string s = line;
         foreach (char c in s)
             result += (LettersandStuff(18, c));
-
         return result;
     }
 
@@ -104,7 +103,6 @@ internal class FreeHacksDecrypt
         char result;
         if (!char.IsLetter(stringey))
             result = stringey;
-
         else
         {
             char c = char.IsUpper(stringey) ? 'A' : 'a';

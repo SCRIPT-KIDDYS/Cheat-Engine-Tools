@@ -22,7 +22,6 @@ namespace Cheat_Engine_Tools.Forms
         private string ForceProjectXGitHub = "https://github.com/forceprojectx";
 
         // Cheat The Game
-
         private string CTGFacebook = "https://www.facebook.com/groups/CheatTheGame";
         private string CTGWebsite = "http://cheatthegame.net";
         private string CTGDiscord = "https://discordapp.com/invite/ndn4pqs";
@@ -42,9 +41,9 @@ namespace Cheat_Engine_Tools.Forms
             MetroLink Info = sender as MetroLink;
             if (Info.Name.Contains("Force"))
                 NameToNumber = 1;
-            else if (Info.Name.Contains("Cheat"))
+            if (Info.Name.Contains("CTG"))
                 NameToNumber = 2;
-            else if (Info.Name.Contains("Fear"))
+            if (Info.Name.Contains("Fear"))
                 NameToNumber = 3;
 
             switch (NameToNumber)
@@ -54,17 +53,17 @@ namespace Cheat_Engine_Tools.Forms
                         Process.Start(ForceProjectXYoutube);
                     if (Info.Text.Contains("Twitch"))
                         Process.Start(ForceProjectXTwitch);
-                    else if (Info.Text.Contains("GitHub"))
+                    if (Info.Text.Contains("GitHub"))
                         Process.Start(ForceProjectXGitHub);
                     break;
                 case 2:
                     if (Info.Text.Contains("Facebook"))
                         Process.Start(CTGFacebook);
-                    else if (Info.Text.Contains("Website"))
+                    if (Info.Text.Contains("Website"))
                         Process.Start(CTGWebsite);
-                    else if (Info.Text.Contains("Discord"))
+                    if (Info.Text.Contains("Discord"))
                         Process.Start(CTGDiscord);
-                    else if (Info.Text.Contains("Youtube"))
+                    if (Info.Text.Contains("Youtube"))
                         Process.Start(CTGYoutube);
                     break;
                 case 3:

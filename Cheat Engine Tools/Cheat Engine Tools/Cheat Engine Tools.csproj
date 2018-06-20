@@ -64,6 +64,12 @@
     <Compile Include="Forms\CEDecompiler_UC.Designer.cs">
       <DependentUpon>CEDecompiler_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CEVersion_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CEVersion_UC.Designer.cs">
+      <DependentUpon>CEVersion_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DLLInjector_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CEDecompiler_UC.resx">
       <DependentUpon>CEDecompiler_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CEVersion_UC.resx">
+      <DependentUpon>CEVersion_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DLLInjector_UC.resx">
       <DependentUpon>DLLInjector_UC.cs</DependentUpon>

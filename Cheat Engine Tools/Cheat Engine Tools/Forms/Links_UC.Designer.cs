@@ -133,6 +133,7 @@
             this.CTGFacebook_metroLink.Text = "Facebook";
             this.CTGFacebook_metroLink.UseSelectable = true;
             this.CTGFacebook_metroLink.UseVisualStyleBackColor = true;
+            this.CTGFacebook_metroLink.Click += new System.EventHandler(this.LinkGrabber);
             // 
             // CTGDiscord_metroLink
             // 
@@ -144,6 +145,7 @@
             this.CTGDiscord_metroLink.Text = "Discord";
             this.CTGDiscord_metroLink.UseSelectable = true;
             this.CTGDiscord_metroLink.UseVisualStyleBackColor = true;
+            this.CTGDiscord_metroLink.Click += new System.EventHandler(this.LinkGrabber);
             // 
             // CTGYoutube_metroLink
             // 
@@ -155,6 +157,7 @@
             this.CTGYoutube_metroLink.Text = "Youtube";
             this.CTGYoutube_metroLink.UseSelectable = true;
             this.CTGYoutube_metroLink.UseVisualStyleBackColor = true;
+            this.CTGYoutube_metroLink.Click += new System.EventHandler(this.LinkGrabber);
             // 
             // CTGWebsite_metroLink
             // 
@@ -166,6 +169,7 @@
             this.CTGWebsite_metroLink.Text = "Website";
             this.CTGWebsite_metroLink.UseSelectable = true;
             this.CTGWebsite_metroLink.UseVisualStyleBackColor = true;
+            this.CTGWebsite_metroLink.Click += new System.EventHandler(this.LinkGrabber);
             // 
             // FearER_Tab
             // 
