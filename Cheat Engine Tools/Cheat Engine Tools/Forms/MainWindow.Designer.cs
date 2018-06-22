@@ -43,11 +43,13 @@
 			this.ceDecompiler1 = new Cheat_Engine_Tools.Forms.CEDecompiler_UC();
 			this.DLLInjector_Tab = new System.Windows.Forms.TabPage();
 			this.dllInjector_UC1 = new Cheat_Engine_Tools.Forms.DLLInjector_UC();
-			this.CE_Version = new System.Windows.Forms.TabPage();
+			this.CEVersion_Tab = new System.Windows.Forms.TabPage();
+			this.ceVersion_UC1 = new Cheat_Engine_Tools.Forms.CEVersion_UC();
 			this.Links_Tab = new System.Windows.Forms.TabPage();
 			this.links_UC1 = new Cheat_Engine_Tools.Forms.Links_UC();
 			this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
-			this.ceVersion_UC1 = new Cheat_Engine_Tools.Forms.CEVersion_UC();
+			this.AOBPatternFinder_Tab = new System.Windows.Forms.TabPage();
+			this.aobPatternFinder_UC1 = new Cheat_Engine_Tools.Forms.AOBPatternFinder_UC();
 			this.MainMenu_metroTabControl.SuspendLayout();
 			this.Welcome_Tab.SuspendLayout();
 			this.Converters_Tab.SuspendLayout();
@@ -55,9 +57,10 @@
 			this.FreeHacks_Tab.SuspendLayout();
 			this.CEDecompiler_Tab.SuspendLayout();
 			this.DLLInjector_Tab.SuspendLayout();
-			this.CE_Version.SuspendLayout();
+			this.CEVersion_Tab.SuspendLayout();
 			this.Links_Tab.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
+			this.AOBPatternFinder_Tab.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// MainMenu_metroTabControl
@@ -68,8 +71,9 @@
 			this.MainMenu_metroTabControl.Controls.Add(this.FreeHacks_Tab);
 			this.MainMenu_metroTabControl.Controls.Add(this.CEDecompiler_Tab);
 			this.MainMenu_metroTabControl.Controls.Add(this.DLLInjector_Tab);
-			this.MainMenu_metroTabControl.Controls.Add(this.CE_Version);
+			this.MainMenu_metroTabControl.Controls.Add(this.CEVersion_Tab);
 			this.MainMenu_metroTabControl.Controls.Add(this.Links_Tab);
+			this.MainMenu_metroTabControl.Controls.Add(this.AOBPatternFinder_Tab);
 			this.MainMenu_metroTabControl.Dock = System.Windows.Forms.DockStyle.Top;
 			this.MainMenu_metroTabControl.Location = new System.Drawing.Point(5, 60);
 			this.MainMenu_metroTabControl.Multiline = true;
@@ -85,10 +89,10 @@
 			// Welcome_Tab
 			// 
 			this.Welcome_Tab.Controls.Add(this.welcome1);
-			this.Welcome_Tab.Location = new System.Drawing.Point(4, 28);
+			this.Welcome_Tab.Location = new System.Drawing.Point(4, 52);
 			this.Welcome_Tab.Name = "Welcome_Tab";
 			this.Welcome_Tab.Padding = new System.Windows.Forms.Padding(3);
-			this.Welcome_Tab.Size = new System.Drawing.Size(642, 306);
+			this.Welcome_Tab.Size = new System.Drawing.Size(642, 282);
 			this.Welcome_Tab.TabIndex = 1;
 			this.Welcome_Tab.Text = "Welcome";
 			this.Welcome_Tab.UseVisualStyleBackColor = true;
@@ -100,7 +104,7 @@
 			this.welcome1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.welcome1.Location = new System.Drawing.Point(3, 3);
 			this.welcome1.Name = "welcome1";
-			this.welcome1.Size = new System.Drawing.Size(636, 300);
+			this.welcome1.Size = new System.Drawing.Size(636, 276);
 			this.welcome1.TabIndex = 0;
 			// 
 			// Converters_Tab
@@ -202,16 +206,24 @@
 			this.dllInjector_UC1.Size = new System.Drawing.Size(636, 300);
 			this.dllInjector_UC1.TabIndex = 0;
 			// 
-			// CE_Version
+			// CEVersion_Tab
 			// 
-			this.CE_Version.Controls.Add(this.ceVersion_UC1);
-			this.CE_Version.Location = new System.Drawing.Point(4, 28);
-			this.CE_Version.Name = "CE_Version";
-			this.CE_Version.Padding = new System.Windows.Forms.Padding(3);
-			this.CE_Version.Size = new System.Drawing.Size(642, 306);
-			this.CE_Version.TabIndex = 7;
-			this.CE_Version.Text = "CE Version";
-			this.CE_Version.UseVisualStyleBackColor = true;
+			this.CEVersion_Tab.Controls.Add(this.ceVersion_UC1);
+			this.CEVersion_Tab.Location = new System.Drawing.Point(4, 28);
+			this.CEVersion_Tab.Name = "CEVersion_Tab";
+			this.CEVersion_Tab.Padding = new System.Windows.Forms.Padding(3);
+			this.CEVersion_Tab.Size = new System.Drawing.Size(642, 306);
+			this.CEVersion_Tab.TabIndex = 7;
+			this.CEVersion_Tab.Text = "CE Version";
+			this.CEVersion_Tab.UseVisualStyleBackColor = true;
+			// 
+			// ceVersion_UC1
+			// 
+			this.ceVersion_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.ceVersion_UC1.Location = new System.Drawing.Point(3, 3);
+			this.ceVersion_UC1.Name = "ceVersion_UC1";
+			this.ceVersion_UC1.Size = new System.Drawing.Size(636, 300);
+			this.ceVersion_UC1.TabIndex = 0;
 			// 
 			// Links_Tab
 			// 
@@ -237,13 +249,23 @@
 			this.StyleManager.Owner = this;
 			this.StyleManager.Style = MetroFramework.MetroColorStyle.Teal;
 			// 
-			// ceVersion_UC1
+			// AOBPatternFinder_Tab
 			// 
-			this.ceVersion_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ceVersion_UC1.Location = new System.Drawing.Point(3, 3);
-			this.ceVersion_UC1.Name = "ceVersion_UC1";
-			this.ceVersion_UC1.Size = new System.Drawing.Size(636, 300);
-			this.ceVersion_UC1.TabIndex = 0;
+			this.AOBPatternFinder_Tab.BackColor = System.Drawing.Color.Transparent;
+			this.AOBPatternFinder_Tab.Controls.Add(this.aobPatternFinder_UC1);
+			this.AOBPatternFinder_Tab.Location = new System.Drawing.Point(4, 52);
+			this.AOBPatternFinder_Tab.Name = "AOBPatternFinder_Tab";
+			this.AOBPatternFinder_Tab.Size = new System.Drawing.Size(642, 282);
+			this.AOBPatternFinder_Tab.TabIndex = 8;
+			this.AOBPatternFinder_Tab.Text = "AOB Pattern Finder";
+			// 
+			// aobPatternFinder_UC1
+			// 
+			this.aobPatternFinder_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.aobPatternFinder_UC1.Location = new System.Drawing.Point(0, 0);
+			this.aobPatternFinder_UC1.Name = "aobPatternFinder_UC1";
+			this.aobPatternFinder_UC1.Size = new System.Drawing.Size(642, 282);
+			this.aobPatternFinder_UC1.TabIndex = 0;
 			// 
 			// MainWindow
 			// 
@@ -265,9 +287,10 @@
 			this.FreeHacks_Tab.ResumeLayout(false);
 			this.CEDecompiler_Tab.ResumeLayout(false);
 			this.DLLInjector_Tab.ResumeLayout(false);
-			this.CE_Version.ResumeLayout(false);
+			this.CEVersion_Tab.ResumeLayout(false);
 			this.Links_Tab.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
+			this.AOBPatternFinder_Tab.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
@@ -290,7 +313,9 @@
         private Forms.CEDecompiler_UC ceDecompiler1;
         private Forms.Links_UC links_UC1;
         private Forms.DLLInjector_UC dllInjector_UC1;
-		private System.Windows.Forms.TabPage CE_Version;
+		private System.Windows.Forms.TabPage CEVersion_Tab;
 		private Forms.CEVersion_UC ceVersion_UC1;
+		private System.Windows.Forms.TabPage AOBPatternFinder_Tab;
+		private Forms.AOBPatternFinder_UC aobPatternFinder_UC1;
 	}
 }

@@ -34,6 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -52,6 +53,12 @@
     <Compile Include="ClassFiles\CEDecompile.cs" />
     <Compile Include="ClassFiles\DLL Injector.cs" />
     <Compile Include="ClassFiles\FreeHacksDecrypt.cs" />
+    <Compile Include="Forms\AOBPatternFinder_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AOBPatternFinder_UC.Designer.cs">
+      <DependentUpon>AOBPatternFinder_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ByteConverter_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +282,9 @@
     <Compile Include="MetroFramework\Main\Native\WinCaret.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AOBPatternFinder_UC.resx">
+      <DependentUpon>AOBPatternFinder_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ByteConverter_UC.resx">
       <DependentUpon>ByteConverter_UC.cs</DependentUpon>
     </EmbeddedResource>

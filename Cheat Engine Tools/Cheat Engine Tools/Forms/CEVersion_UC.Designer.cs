@@ -90,7 +90,6 @@
 			this.metroButton1.Text = "Install Plugins (Coming Soon)";
 			this.metroButton1.UseSelectable = true;
 			this.metroButton1.UseVisualStyleBackColor = true;
-			this.metroButton1.Click += new System.EventHandler(this.OpenCE);
 			// 
 			// CEVersion_UC
 			// 
