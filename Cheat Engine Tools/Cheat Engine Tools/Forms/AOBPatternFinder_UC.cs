@@ -15,9 +15,11 @@ namespace Cheat_Engine_Tools.Forms
 	public partial class AOBPatternFinder_UC : UserControl
 	{
 
-		private readonly List<char> whitelist = new List<char>() { '?', '*' };
+		private readonly List<char> Whitelist = new List<char>() { '?', '*', 'x', 'X' };
 
 		private List<string> AOBs = new List<string>();
+
+		private int JakeFromStateFarm = 0;
 
 
 		public AOBPatternFinder_UC()
@@ -27,18 +29,19 @@ namespace Cheat_Engine_Tools.Forms
 
 		private bool OnWhitelist(char c)
 		{
-			return whitelist.Contains(c);
+			return Whitelist.Contains(c);
 		}
 
-		private string ReplaceAt(string input, int index, char newChar)
+		private string ReplaceAt(string Input, int Index, char NewChar)
 		{
-			StringBuilder builder = new StringBuilder(input);
-			builder[index] = newChar;
-			return builder.ToString();
+			StringBuilder SB = new StringBuilder(Input);
+			SB[Index] = NewChar;
+			return SB.ToString();
 		}
+
 		private void WildcardString(ref string original, string other)
 		{
-			for (int i = 0; i < original.Length; i++)
+			for (int i = 1; i < original.Length; i++)
 				try
 				{
 					char originalChar = Convert.ToChar(original.Substring(i, 1));
@@ -48,52 +51,44 @@ namespace Cheat_Engine_Tools.Forms
 						if (originalChar != otherChar)
 							original = ReplaceAt(original, i, '?');
 				}
-				catch
+				catch //startIndex error. Can n ot be larger. Look into later. 
 				{ continue; }
 		}
 
-		private void GenerateAOB()
+		private void GenerateAOB(object sender, EventArgs e)
 		{
 			AOBs.Clear();
-			AOBs.Add(metroTextBox1.Text);
-			AOBs.Add(metroTextBox2.Text);
-			AOBs.Add(metroTextBox3.Text);
-			AOBs.Add(metroTextBox4.Text);
-			AOBs.Add(metroTextBox5.Text);
+			AOBs.Add(AOB1_metroTextBox.Text);
+			AOBs.Add(AOB2_metroTextBox.Text);
+			AOBs.Add(AOB3_metroTextBox.Text);
+			AOBs.Add(AOB4_metroTextBox.Text);
+			AOBs.Add(AOB5_metroTextBox.Text);
 
 			string wildcard = AOBs[0];
 
 			foreach (string AOB in AOBs)
 				WildcardString(ref wildcard, AOB);
 
-			metroTextBox6.Text = wildcard;
+			AOBResults_metroTextBox.Text = wildcard;
+			IdiotProof();
 		}
 
-		private void MetroButton1_Click_1(object sender, EventArgs e)
+		private void FormatAOBs_metroButton_Click(object sender, EventArgs e)
 		{
-			GenerateAOB();
-		}
-
-		private void MetroButton2_Click(object sender, EventArgs e)
-		{
-			foreach (Control x in this.Controls)
-				if (x is MetroTextBox)
+			foreach (Control TextBoxs in this.Controls)
+				if (TextBoxs is MetroTextBox)
 				{
-					string lala = Regex.Replace(x.Text, @" ", "");
-					string lala2 = Regex.Replace(lala, ".{2}", "$0 ");
-					x.Text = lala2.Trim();
+					string RemoveSpaces = Regex.Replace(TextBoxs.Text, @" ", "");
+					string AddSpaces = Regex.Replace(RemoveSpaces, ".{2}", "$0 ");
+					TextBoxs.Text = AddSpaces.Trim();
 				}
 
-			Length_Gen();
-		}
-
-		private void Length_Gen()
-		{
-			metroLabel1.Text = (metroTextBox1.Text.Length - SpaceCount(metroTextBox1.Text)) / 2 + " bytes";
-			metroLabel2.Text = (metroTextBox2.Text.Length - SpaceCount(metroTextBox2.Text)) / 2 + " bytes";
-			metroLabel3.Text = (metroTextBox3.Text.Length - SpaceCount(metroTextBox3.Text)) / 2 + " bytes";
-			metroLabel4.Text = (metroTextBox4.Text.Length - SpaceCount(metroTextBox4.Text)) / 2 + " bytes";
-			metroLabel5.Text = (metroTextBox5.Text.Length - SpaceCount(metroTextBox5.Text)) / 2 + " bytes";
+			AOB1Length_metroLabel.Text = (AOB1_metroTextBox.Text.Length - SpaceCount(AOB1_metroTextBox.Text)) / 2 + " bytes";
+			AOB2Length_metroLabel.Text = (AOB2_metroTextBox.Text.Length - SpaceCount(AOB2_metroTextBox.Text)) / 2 + " bytes";
+			AOB3Length_metroLabel.Text = (AOB3_metroTextBox.Text.Length - SpaceCount(AOB3_metroTextBox.Text)) / 2 + " bytes";
+			AOB4Length_metroLabel.Text = (AOB4_metroTextBox.Text.Length - SpaceCount(AOB4_metroTextBox.Text)) / 2 + " bytes";
+			AOB5Length_metroLabel.Text = (AOB5_metroTextBox.Text.Length - SpaceCount(AOB5_metroTextBox.Text)) / 2 + " bytes";
+			IdiotProof();
 		}
 
 		private static int SpaceCount(string str)
@@ -107,6 +102,23 @@ namespace Cheat_Engine_Tools.Forms
 					spcctr++;
 			}
 			return spcctr;
+		}
+
+		private void IdiotProof()
+		{
+			if (JakeFromStateFarm == 0)
+			{
+				Compare_metroButton.Enabled = true;
+				FormatAOBs_metroButton.Enabled = false;
+				JakeFromStateFarm = 1;
+			}
+			else
+			{
+				Compare_metroButton.Enabled = false;
+				FormatAOBs_metroButton.Enabled = true;
+				JakeFromStateFarm = 0;
+
+			}
 		}
 	}
 }

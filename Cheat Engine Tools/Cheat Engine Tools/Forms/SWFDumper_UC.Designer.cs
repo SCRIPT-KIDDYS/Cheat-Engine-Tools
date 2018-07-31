@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(645, 285);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "COMING SOON";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SWFDumper_UC
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Name = "SWFDumper_UC";
-            this.Size = new System.Drawing.Size(645, 285);
-            this.ResumeLayout(false);
+			this.label1 = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+			this.label1.Location = new System.Drawing.Point(0, 0);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(645, 285);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "COMING SOON?";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// SWFDumper_UC
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.label1);
+			this.Name = "SWFDumper_UC";
+			this.Size = new System.Drawing.Size(645, 285);
+			this.ResumeLayout(false);
 
         }
 

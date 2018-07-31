@@ -36,11 +36,10 @@ namespace Cheat_Engine_Tools.Forms
             string HTMLFormat = GameName.Replace(" ", "%20");
             WebClient Client = new WebClient();
             String DownloadedString = Client.DownloadString("http://www.cyberterminators.co/ctmt-v2/getDetails.php?gameName=" + HTMLFormat);
-
-			if (DownloadedString.Length == 0)
+			if (DownloadedString.Length <= 3)
 				FreeHacks_Codes_TextBox.Text = "This is a manual hack";
 			else
-			FreeHacks_Codes_TextBox.Text = FreeHacksDecrypt.DecryptStuff(DownloadedString, GameName);
+				FreeHacks_Codes_TextBox.Text = FreeHacksDecrypt.DecryptStuff(DownloadedString, GameName);
 
 			FreeHacks_Codes_TextBox.Focus();
         }

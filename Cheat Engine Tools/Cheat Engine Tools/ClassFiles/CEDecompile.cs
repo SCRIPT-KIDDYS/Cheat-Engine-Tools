@@ -16,7 +16,7 @@ internal class CEDecompile
         MemoryStream ms;
         BinaryReader br;
 
-        string outFileName = "Decrypted_" + Path.GetFileName(filePath);
+        string outFileName = "Decrypted_" + Path.GetFileNameWithoutExtension(filePath) + ".ct";
         string outFilePath = Path.Combine(Path.GetDirectoryName(filePath), outFileName);
 
         byte[] raw_data = File.ReadAllBytes(filePath);

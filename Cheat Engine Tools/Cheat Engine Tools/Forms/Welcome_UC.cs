@@ -16,5 +16,16 @@ namespace Cheat_Engine_Tools.Forms
         {
             InitializeComponent();
         }
-    }
+
+		private void ColorChanger_Timer_Tick(object sender, EventArgs e)
+		{
+			Random random = new Random();
+			int A = random.Next(0, 255);
+			int R = random.Next(0, 255);
+			int G = random.Next(0, 255);
+			int B = random.Next(0, 255);
+			metroLabel1.ForeColor = Color.FromArgb(B, G, R, A);
+			metroLabel2.ForeColor = Color.FromArgb(A, R, G, B);
+		}
+	}
 }

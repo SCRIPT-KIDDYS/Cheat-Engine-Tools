@@ -47,9 +47,9 @@
 			this.ceVersion_UC1 = new Cheat_Engine_Tools.Forms.CEVersion_UC();
 			this.Links_Tab = new System.Windows.Forms.TabPage();
 			this.links_UC1 = new Cheat_Engine_Tools.Forms.Links_UC();
-			this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
 			this.AOBPatternFinder_Tab = new System.Windows.Forms.TabPage();
 			this.aobPatternFinder_UC1 = new Cheat_Engine_Tools.Forms.AOBPatternFinder_UC();
+			this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
 			this.MainMenu_metroTabControl.SuspendLayout();
 			this.Welcome_Tab.SuspendLayout();
 			this.Converters_Tab.SuspendLayout();
@@ -59,8 +59,8 @@
 			this.DLLInjector_Tab.SuspendLayout();
 			this.CEVersion_Tab.SuspendLayout();
 			this.Links_Tab.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
 			this.AOBPatternFinder_Tab.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// MainMenu_metroTabControl
@@ -99,6 +99,7 @@
 			// 
 			// welcome1
 			// 
+			this.welcome1.BackColor = System.Drawing.Color.Transparent;
 			this.welcome1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("welcome1.BackgroundImage")));
 			this.welcome1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.welcome1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -110,10 +111,10 @@
 			// Converters_Tab
 			// 
 			this.Converters_Tab.Controls.Add(this.byteConverter_UC1);
-			this.Converters_Tab.Location = new System.Drawing.Point(4, 28);
+			this.Converters_Tab.Location = new System.Drawing.Point(4, 52);
 			this.Converters_Tab.Name = "Converters_Tab";
 			this.Converters_Tab.Padding = new System.Windows.Forms.Padding(3);
-			this.Converters_Tab.Size = new System.Drawing.Size(642, 306);
+			this.Converters_Tab.Size = new System.Drawing.Size(642, 282);
 			this.Converters_Tab.TabIndex = 0;
 			this.Converters_Tab.Text = "Converters";
 			this.Converters_Tab.UseVisualStyleBackColor = true;
@@ -124,7 +125,7 @@
 			this.byteConverter_UC1.Location = new System.Drawing.Point(3, 3);
 			this.byteConverter_UC1.Name = "byteConverter_UC1";
 			this.byteConverter_UC1.Padding = new System.Windows.Forms.Padding(5);
-			this.byteConverter_UC1.Size = new System.Drawing.Size(636, 300);
+			this.byteConverter_UC1.Size = new System.Drawing.Size(636, 276);
 			this.byteConverter_UC1.TabIndex = 0;
 			// 
 			// SWFDumper_Tab
@@ -244,11 +245,6 @@
 			this.links_UC1.Size = new System.Drawing.Size(636, 300);
 			this.links_UC1.TabIndex = 0;
 			// 
-			// StyleManager
-			// 
-			this.StyleManager.Owner = this;
-			this.StyleManager.Style = MetroFramework.MetroColorStyle.Teal;
-			// 
 			// AOBPatternFinder_Tab
 			// 
 			this.AOBPatternFinder_Tab.BackColor = System.Drawing.Color.Transparent;
@@ -266,6 +262,11 @@
 			this.aobPatternFinder_UC1.Name = "aobPatternFinder_UC1";
 			this.aobPatternFinder_UC1.Size = new System.Drawing.Size(642, 282);
 			this.aobPatternFinder_UC1.TabIndex = 0;
+			// 
+			// StyleManager
+			// 
+			this.StyleManager.Owner = this;
+			this.StyleManager.Style = MetroFramework.MetroColorStyle.Teal;
 			// 
 			// MainWindow
 			// 
@@ -289,8 +290,8 @@
 			this.DLLInjector_Tab.ResumeLayout(false);
 			this.CEVersion_Tab.ResumeLayout(false);
 			this.Links_Tab.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
 			this.AOBPatternFinder_Tab.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
 			this.ResumeLayout(false);
 
         }

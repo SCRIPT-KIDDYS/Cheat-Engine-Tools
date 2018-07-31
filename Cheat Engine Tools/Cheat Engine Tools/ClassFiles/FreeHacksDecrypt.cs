@@ -58,6 +58,7 @@ internal class FreeHacksDecrypt
             byte[] data = Convert.FromBase64String(items);
             final += Encoding.UTF8.GetString(data) + Environment.NewLine;
         }
+
         return dateandstuff + final;
     }
     #endregion
@@ -66,6 +67,7 @@ internal class FreeHacksDecrypt
     public static string DecryptStuff(string fluffy, string gamename)
     {
         if (fluffy == "@@" || fluffy == "") { }
+
         else
         {
             string DecryptString = Decrypt(fluffy);
@@ -95,6 +97,7 @@ internal class FreeHacksDecrypt
         string s = line;
         foreach (char c in s)
             result += (LettersandStuff(18, c));
+
         return result;
     }
 
@@ -103,6 +106,7 @@ internal class FreeHacksDecrypt
         char result;
         if (!char.IsLetter(stringey))
             result = stringey;
+
         else
         {
             char c = char.IsUpper(stringey) ? 'A' : 'a';
