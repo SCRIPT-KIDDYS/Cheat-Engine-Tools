@@ -1,33 +1,23 @@
-﻿using System;
+﻿using MetroFramework.Controls;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
-using MetroFramework.Controls;
+using System.Windows.Forms;
 
 namespace Cheat_Engine_Tools.Forms
 {
-	public partial class AOBPatternFinder_UC : UserControl
+    public partial class AOBPatternFinder_UC : UserControl
 	{
-
 		private readonly List<char> Whitelist = new List<char>() { '?', '*', 'x', 'X' };
 
 		private List<string> AOBs = new List<string>();
 
 		private int JakeFromStateFarm = 0;
 
+        public AOBPatternFinder_UC() => InitializeComponent();
 
-		public AOBPatternFinder_UC()
-		{
-			InitializeComponent();
-		}
-
-		private bool OnWhitelist(char c)
+        private bool OnWhitelist(char c)
 		{
 			return Whitelist.Contains(c);
 		}
@@ -51,8 +41,8 @@ namespace Cheat_Engine_Tools.Forms
 						if (originalChar != otherChar)
 							original = ReplaceAt(original, i, '?');
 				}
-				catch //startIndex error. Can n ot be larger. Look into later. 
-				{ continue; }
+				catch //startIndex error. Can not be larger. Look into later. 
+				{ Console.WriteLine("Hmmmmmm"); }
 		}
 
 		private void GenerateAOB(object sender, EventArgs e)

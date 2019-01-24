@@ -12,9 +12,6 @@ namespace Cheat_Engine_Tools.Forms
 {
     public partial class SWFDumper_UC : UserControl
     {
-        public SWFDumper_UC()
-        {
-            InitializeComponent();
-        }
+        public SWFDumper_UC() => InitializeComponent();
     }
 }

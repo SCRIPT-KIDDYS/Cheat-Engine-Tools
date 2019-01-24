@@ -1,16 +1,11 @@
-﻿#region Using
-using System;
+﻿using System;
 using System.Text;
 using System.IO;
 using System.IO.Compression;
 using System.Windows.Forms;
-#endregion
 
 internal class CEDecompile
 {
-    #region DecryptTrainer
-
-
     public static bool DecryptTrainer(string filePath)
     {
         MemoryStream ms;
@@ -24,19 +19,15 @@ internal class CEDecompile
         byte ckey = 0xCE;
 
         for (int i = 2; i < size; i++)
-        {
             raw_data[i] = (byte)(raw_data[i] ^ raw_data[i - 2]);
-        }
 
         for (int j = size - 2; j >= 0; j--)
-        {
             raw_data[j] = (byte)(raw_data[j] ^ raw_data[j + 1]);
-        }
 
         for (int k = 0; k < size; k++)
         {
             raw_data[k] = (byte)(raw_data[k] ^ ckey);
-            ++ckey;
+            ckey++;
         }
 
         ms = new MemoryStream(raw_data);
@@ -70,9 +61,7 @@ internal class CEDecompile
         }
 
     }
-    #endregion
 
-    #region DeCompress
     private static byte[] DeCompress(byte[] data)
     {
         using (var compressStream = new MemoryStream(data))
@@ -84,5 +73,4 @@ internal class CEDecompile
             return outStream.ToArray();
         }
     }
-    #endregion
 }

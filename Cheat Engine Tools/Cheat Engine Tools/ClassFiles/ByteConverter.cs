@@ -13,14 +13,11 @@ internal class ByteConverter : INotifyPropertyChanged
     private float _ieeex32;
     private double _ieeex64;
 
-    private void OnPropertyChanged(string PropertyName)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
-    }
+    private void OnPropertyChanged(string PropertyName) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
 
     public string U30
     {
-        get { return _u30.ToString("X"); }
+        get => _u30.ToString("X");
         set
         {
             _u30 = HandleHexInput(value);
@@ -36,7 +33,7 @@ internal class ByteConverter : INotifyPropertyChanged
 
     public string Hex
     {
-        get { return _hex.ToString("X"); }
+        get => _hex.ToString("X");
         set
         {
             _hex = HandleHexInput(value);
@@ -52,7 +49,7 @@ internal class ByteConverter : INotifyPropertyChanged
 
     public int FourByte_x8_p6
     {
-        get { return _4bytex8p6; }
+        get => _4bytex8p6;
         set
         {
             _4bytex8p6 = value;
@@ -68,7 +65,7 @@ internal class ByteConverter : INotifyPropertyChanged
 
     public int FourByte_x8
     {
-        get { return _4byteX8; }
+        get => _4byteX8;
         set
         {
             _4byteX8 = value;
@@ -84,7 +81,7 @@ internal class ByteConverter : INotifyPropertyChanged
 
     public int FourByte
     {
-        get { return _4byte; }
+        get => _4byte;
         set
         {
             _4byte = value;

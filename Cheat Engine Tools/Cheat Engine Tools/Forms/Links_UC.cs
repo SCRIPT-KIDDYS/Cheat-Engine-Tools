@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MetroFramework.Controls;
+﻿using MetroFramework.Controls;
+using System;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace Cheat_Engine_Tools.Forms
 {
-
     public partial class Links_UC : UserControl
     {
 
@@ -30,10 +22,7 @@ namespace Cheat_Engine_Tools.Forms
         // FearER
         private string FearEXGitHub = "https://github.com/FreeER";
 
-        public Links_UC()
-        {
-            InitializeComponent();
-        }
+        public Links_UC() => InitializeComponent();
 
         private void LinkGrabber(object sender, EventArgs e)
         {
