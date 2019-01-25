@@ -35,8 +35,6 @@
             this.welcome1 = new Cheat_Engine_Tools.Forms.Welcome_UC();
             this.Converters_Tab = new System.Windows.Forms.TabPage();
             this.byteConverter_UC1 = new Cheat_Engine_Tools.ByteConverter_UC();
-            this.SWFDumper_Tab = new System.Windows.Forms.TabPage();
-            this.swfDumper1 = new Cheat_Engine_Tools.Forms.SWFDumper_UC();
             this.FreeHacks_Tab = new System.Windows.Forms.TabPage();
             this.freeHacks1 = new Cheat_Engine_Tools.Forms.FreeHacks_UC();
             this.CEDecompiler_Tab = new System.Windows.Forms.TabPage();
@@ -53,7 +51,6 @@
             this.MainMenu_metroTabControl.SuspendLayout();
             this.Welcome_Tab.SuspendLayout();
             this.Converters_Tab.SuspendLayout();
-            this.SWFDumper_Tab.SuspendLayout();
             this.FreeHacks_Tab.SuspendLayout();
             this.CEDecompiler_Tab.SuspendLayout();
             this.DLLInjector_Tab.SuspendLayout();
@@ -67,13 +64,12 @@
             // 
             this.MainMenu_metroTabControl.Controls.Add(this.Welcome_Tab);
             this.MainMenu_metroTabControl.Controls.Add(this.Converters_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.SWFDumper_Tab);
             this.MainMenu_metroTabControl.Controls.Add(this.FreeHacks_Tab);
             this.MainMenu_metroTabControl.Controls.Add(this.CEDecompiler_Tab);
             this.MainMenu_metroTabControl.Controls.Add(this.DLLInjector_Tab);
             this.MainMenu_metroTabControl.Controls.Add(this.CEVersion_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.Links_Tab);
             this.MainMenu_metroTabControl.Controls.Add(this.AOBPatternFinder_Tab);
+            this.MainMenu_metroTabControl.Controls.Add(this.Links_Tab);
             this.MainMenu_metroTabControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainMenu_metroTabControl.Location = new System.Drawing.Point(5, 60);
             this.MainMenu_metroTabControl.Multiline = true;
@@ -110,10 +106,10 @@
             // Converters_Tab
             // 
             this.Converters_Tab.Controls.Add(this.byteConverter_UC1);
-            this.Converters_Tab.Location = new System.Drawing.Point(4, 52);
+            this.Converters_Tab.Location = new System.Drawing.Point(4, 28);
             this.Converters_Tab.Name = "Converters_Tab";
             this.Converters_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Converters_Tab.Size = new System.Drawing.Size(642, 282);
+            this.Converters_Tab.Size = new System.Drawing.Size(642, 306);
             this.Converters_Tab.TabIndex = 0;
             this.Converters_Tab.Text = "Converters";
             this.Converters_Tab.UseVisualStyleBackColor = true;
@@ -124,35 +120,16 @@
             this.byteConverter_UC1.Location = new System.Drawing.Point(3, 3);
             this.byteConverter_UC1.Name = "byteConverter_UC1";
             this.byteConverter_UC1.Padding = new System.Windows.Forms.Padding(5);
-            this.byteConverter_UC1.Size = new System.Drawing.Size(636, 276);
+            this.byteConverter_UC1.Size = new System.Drawing.Size(636, 300);
             this.byteConverter_UC1.TabIndex = 0;
-            // 
-            // SWFDumper_Tab
-            // 
-            this.SWFDumper_Tab.Controls.Add(this.swfDumper1);
-            this.SWFDumper_Tab.Location = new System.Drawing.Point(4, 52);
-            this.SWFDumper_Tab.Name = "SWFDumper_Tab";
-            this.SWFDumper_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.SWFDumper_Tab.Size = new System.Drawing.Size(642, 282);
-            this.SWFDumper_Tab.TabIndex = 2;
-            this.SWFDumper_Tab.Text = "SWF Dumper";
-            this.SWFDumper_Tab.UseVisualStyleBackColor = true;
-            // 
-            // swfDumper1
-            // 
-            this.swfDumper1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.swfDumper1.Location = new System.Drawing.Point(3, 3);
-            this.swfDumper1.Name = "swfDumper1";
-            this.swfDumper1.Size = new System.Drawing.Size(636, 276);
-            this.swfDumper1.TabIndex = 0;
             // 
             // FreeHacks_Tab
             // 
             this.FreeHacks_Tab.Controls.Add(this.freeHacks1);
-            this.FreeHacks_Tab.Location = new System.Drawing.Point(4, 52);
+            this.FreeHacks_Tab.Location = new System.Drawing.Point(4, 28);
             this.FreeHacks_Tab.Name = "FreeHacks_Tab";
             this.FreeHacks_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.FreeHacks_Tab.Size = new System.Drawing.Size(642, 282);
+            this.FreeHacks_Tab.Size = new System.Drawing.Size(642, 306);
             this.FreeHacks_Tab.TabIndex = 3;
             this.FreeHacks_Tab.Text = "Free Hacks";
             this.FreeHacks_Tab.UseVisualStyleBackColor = true;
@@ -162,16 +139,16 @@
             this.freeHacks1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.freeHacks1.Location = new System.Drawing.Point(3, 3);
             this.freeHacks1.Name = "freeHacks1";
-            this.freeHacks1.Size = new System.Drawing.Size(636, 276);
+            this.freeHacks1.Size = new System.Drawing.Size(636, 300);
             this.freeHacks1.TabIndex = 0;
             // 
             // CEDecompiler_Tab
             // 
             this.CEDecompiler_Tab.Controls.Add(this.ceDecompiler1);
-            this.CEDecompiler_Tab.Location = new System.Drawing.Point(4, 52);
+            this.CEDecompiler_Tab.Location = new System.Drawing.Point(4, 28);
             this.CEDecompiler_Tab.Name = "CEDecompiler_Tab";
             this.CEDecompiler_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.CEDecompiler_Tab.Size = new System.Drawing.Size(642, 282);
+            this.CEDecompiler_Tab.Size = new System.Drawing.Size(642, 306);
             this.CEDecompiler_Tab.TabIndex = 4;
             this.CEDecompiler_Tab.Text = "CE Decompiler";
             this.CEDecompiler_Tab.UseVisualStyleBackColor = true;
@@ -184,16 +161,16 @@
             this.ceDecompiler1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ceDecompiler1.Location = new System.Drawing.Point(3, 3);
             this.ceDecompiler1.Name = "ceDecompiler1";
-            this.ceDecompiler1.Size = new System.Drawing.Size(636, 276);
+            this.ceDecompiler1.Size = new System.Drawing.Size(636, 300);
             this.ceDecompiler1.TabIndex = 0;
             // 
             // DLLInjector_Tab
             // 
             this.DLLInjector_Tab.Controls.Add(this.dllInjector_UC1);
-            this.DLLInjector_Tab.Location = new System.Drawing.Point(4, 52);
+            this.DLLInjector_Tab.Location = new System.Drawing.Point(4, 28);
             this.DLLInjector_Tab.Name = "DLLInjector_Tab";
             this.DLLInjector_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.DLLInjector_Tab.Size = new System.Drawing.Size(642, 282);
+            this.DLLInjector_Tab.Size = new System.Drawing.Size(642, 306);
             this.DLLInjector_Tab.TabIndex = 6;
             this.DLLInjector_Tab.Text = "DLL Injector";
             this.DLLInjector_Tab.UseVisualStyleBackColor = true;
@@ -203,16 +180,16 @@
             this.dllInjector_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dllInjector_UC1.Location = new System.Drawing.Point(3, 3);
             this.dllInjector_UC1.Name = "dllInjector_UC1";
-            this.dllInjector_UC1.Size = new System.Drawing.Size(636, 276);
+            this.dllInjector_UC1.Size = new System.Drawing.Size(636, 300);
             this.dllInjector_UC1.TabIndex = 0;
             // 
             // CEVersion_Tab
             // 
             this.CEVersion_Tab.Controls.Add(this.ceVersion_UC1);
-            this.CEVersion_Tab.Location = new System.Drawing.Point(4, 52);
+            this.CEVersion_Tab.Location = new System.Drawing.Point(4, 28);
             this.CEVersion_Tab.Name = "CEVersion_Tab";
             this.CEVersion_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.CEVersion_Tab.Size = new System.Drawing.Size(642, 282);
+            this.CEVersion_Tab.Size = new System.Drawing.Size(642, 306);
             this.CEVersion_Tab.TabIndex = 7;
             this.CEVersion_Tab.Text = "CE Version";
             this.CEVersion_Tab.UseVisualStyleBackColor = true;
@@ -222,7 +199,7 @@
             this.ceVersion_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ceVersion_UC1.Location = new System.Drawing.Point(3, 3);
             this.ceVersion_UC1.Name = "ceVersion_UC1";
-            this.ceVersion_UC1.Size = new System.Drawing.Size(636, 276);
+            this.ceVersion_UC1.Size = new System.Drawing.Size(636, 300);
             this.ceVersion_UC1.TabIndex = 0;
             // 
             // Links_Tab
@@ -248,9 +225,9 @@
             // 
             this.AOBPatternFinder_Tab.BackColor = System.Drawing.Color.Transparent;
             this.AOBPatternFinder_Tab.Controls.Add(this.aobPatternFinder_UC1);
-            this.AOBPatternFinder_Tab.Location = new System.Drawing.Point(4, 52);
+            this.AOBPatternFinder_Tab.Location = new System.Drawing.Point(4, 28);
             this.AOBPatternFinder_Tab.Name = "AOBPatternFinder_Tab";
-            this.AOBPatternFinder_Tab.Size = new System.Drawing.Size(642, 282);
+            this.AOBPatternFinder_Tab.Size = new System.Drawing.Size(642, 306);
             this.AOBPatternFinder_Tab.TabIndex = 8;
             this.AOBPatternFinder_Tab.Text = "AOB Pattern Finder";
             // 
@@ -259,7 +236,7 @@
             this.aobPatternFinder_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aobPatternFinder_UC1.Location = new System.Drawing.Point(0, 0);
             this.aobPatternFinder_UC1.Name = "aobPatternFinder_UC1";
-            this.aobPatternFinder_UC1.Size = new System.Drawing.Size(642, 282);
+            this.aobPatternFinder_UC1.Size = new System.Drawing.Size(642, 306);
             this.aobPatternFinder_UC1.TabIndex = 0;
             // 
             // StyleManager
@@ -283,7 +260,6 @@
             this.MainMenu_metroTabControl.ResumeLayout(false);
             this.Welcome_Tab.ResumeLayout(false);
             this.Converters_Tab.ResumeLayout(false);
-            this.SWFDumper_Tab.ResumeLayout(false);
             this.FreeHacks_Tab.ResumeLayout(false);
             this.CEDecompiler_Tab.ResumeLayout(false);
             this.DLLInjector_Tab.ResumeLayout(false);
@@ -302,12 +278,10 @@
         private System.Windows.Forms.TabPage Welcome_Tab;
         private new MetroFramework.Components.MetroStyleManager StyleManager;
         private ByteConverter_UC byteConverter_UC1;
-        private System.Windows.Forms.TabPage SWFDumper_Tab;
         private System.Windows.Forms.TabPage FreeHacks_Tab;
         private System.Windows.Forms.TabPage CEDecompiler_Tab;
         private System.Windows.Forms.TabPage Links_Tab;
         private System.Windows.Forms.TabPage DLLInjector_Tab;
-        private Forms.SWFDumper_UC swfDumper1;
         private Forms.Welcome_UC welcome1;
         private Forms.FreeHacks_UC freeHacks1;
         private Forms.CEDecompiler_UC ceDecompiler1;

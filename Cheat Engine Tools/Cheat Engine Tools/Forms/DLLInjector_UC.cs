@@ -38,7 +38,6 @@ namespace Cheat_Engine_Tools.Forms
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     string dllfile = openFileDialog1.FileName;
-                    MessageBox.Show("Im pretty sure this will work");
                     DllInjector DLLInjector = new DllInjector();
                     DLLInjector.GetInstance.Inject(processname, dllfile);
                 }

@@ -1,0 +1,4 @@
+﻿Fix AOBPatternFinder to not worry about length.
+Add New CEDecompiler.
+Test DLL Injection.
+Did "Free Hacks" get updated?

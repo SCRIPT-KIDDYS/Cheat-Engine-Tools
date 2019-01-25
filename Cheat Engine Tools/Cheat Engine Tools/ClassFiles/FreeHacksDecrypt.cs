@@ -1,18 +1,13 @@
-﻿#region USINGS
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-#endregion
 
 internal class FreeHacksDecrypt
 {
-    #region Static Info
     public static string fukme = "";
-    #endregion
 
-    #region AES Decrypt
     public static string Decrypt(string cipherText)
     {
         string EncryptionKey = "ICamYEloBquEntR";
@@ -39,31 +34,23 @@ internal class FreeHacksDecrypt
         }
         return cipherText;
     }
-    #endregion
 
-    #region String Crap, Kinda bad coding sorry
+
     public static string Stringthing(string lala, string date, string gamename)
     {
         string final = "";
-        string charkey = CharKey(lala);
-        string strOne = charkey;
         string[] strArrayOne = new string[] { "" };
-        strArrayOne = strOne.Split(',');
+        strArrayOne = CharKey(lala).Split(',');
         strArrayOne = strArrayOne.Skip(1).ToArray();
         string[] strResult = strArrayOne.Select(y => string.Concat(y.Reverse())).ToArray();
         string dateandstuff = gamename + " - " + date + Environment.NewLine + Environment.NewLine;
 
         foreach (var items in strResult)
-        {
-            byte[] data = Convert.FromBase64String(items);
-            final += Encoding.UTF8.GetString(data) + Environment.NewLine;
-        }
+            final += Encoding.UTF8.GetString(Convert.FromBase64String(items)) + Environment.NewLine;
 
         return dateandstuff + final;
     }
-    #endregion
 
-    #region PreDecryption
     public static string DecryptStuff(string fluffy, string gamename)
     {
         if (fluffy == "@@" || fluffy == "") { }
@@ -88,9 +75,7 @@ internal class FreeHacksDecrypt
         }
         return "";
     }
-    #endregion
 
-    #region CharKey (Copy Paste)
     public static string CharKey(string line)
     {
         string result = "";
@@ -114,6 +99,4 @@ internal class FreeHacksDecrypt
         }
         return result;
     }
-    #endregion
 }
-
