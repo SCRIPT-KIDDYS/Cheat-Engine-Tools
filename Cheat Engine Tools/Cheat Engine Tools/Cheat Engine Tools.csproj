@@ -102,12 +102,6 @@
     <Compile Include="Forms\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SWFDumper_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\SWFDumper_UC.Designer.cs">
-      <DependentUpon>SWFDumper_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Welcome_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -307,9 +301,6 @@
     <EmbeddedResource Include="Forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SWFDumper_UC.resx">
-      <DependentUpon>SWFDumper_UC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcome_UC.resx">
       <DependentUpon>Welcome_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +345,7 @@
     <Content Include="MetroFramework\Main\Localization\de\MetroToggle.xml" />
     <Content Include="MetroFramework\Main\Localization\en\MetroToggle.xml" />
     <Content Include="MetroFramework\Main\Localization\tr\MetroToggle.xml" />
+    <Content Include="ToDo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

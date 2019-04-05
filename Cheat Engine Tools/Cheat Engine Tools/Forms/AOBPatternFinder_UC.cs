@@ -41,8 +41,9 @@ namespace Cheat_Engine_Tools.Forms
 						if (originalChar != otherChar)
 							original = ReplaceAt(original, i, '?');
 				}
-				catch //startIndex error. Can not be larger. Look into later. 
-				{ Console.WriteLine("Hmmmmmm"); }
+                // TODO: startIndex error. Can not be larger. Look into later. 
+                catch
+                { Console.WriteLine("Hmmmmmm"); }
 		}
 
 		private void GenerateAOB(object sender, EventArgs e)

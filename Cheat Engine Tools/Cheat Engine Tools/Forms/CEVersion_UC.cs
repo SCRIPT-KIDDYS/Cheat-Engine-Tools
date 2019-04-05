@@ -19,8 +19,10 @@ namespace Cheat_Engine_Tools.Forms
                 MessageBox.Show("Select CE from drop down first.");
             else
             {
-                if ((sender as Button).Text.Contains("32")) Process.Start(CEVersion_metroLabel.Text + "cheatengine-i386.exe");
-                else Process.Start(CEVersion_metroLabel.Text + "Cheat Engine.exe");
+                if ((sender as Button).Text.Contains("32"))
+                    Process.Start(CEVersion_metroLabel.Text + "cheatengine-i386.exe");
+                else
+                    Process.Start(CEVersion_metroLabel.Text + "Cheat Engine.exe");
             }
 		}
 
