@@ -6,41 +6,40 @@ using System.Text;
 
 internal class FreeHacksDecrypt
 {
-    public static string fukme = "";
-
     public static string Decrypt(string cipherText)
     {
+        MemoryStream ms = new MemoryStream();
         string EncryptionKey = "ICamYEloBquEntR";
         cipherText = cipherText.Replace(" ", "+");
         byte[] cipherBytes = Convert.FromBase64String(cipherText);
         using (Aes encryptor = Aes.Create())
         {
-            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] { 0x48, 0x39, 0x01, 0x19, 0x28, 0x4D, 0xE2, 0x94, 0xD2, 0x33, 0x84, 0x69, 0x0A });
+            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(EncryptionKey, new byte[] {
+                0x48, 0x39, 0x01, 0x19, 0x28, 0x4D, 0xE2, 0x94, 0xD2, 0x33, 0x84, 0x69, 0x0A
+            });
+
             encryptor.Key = pdb.GetBytes(32);
             encryptor.IV = pdb.GetBytes(16);
-            using (MemoryStream ms = new MemoryStream())
+            using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateDecryptor(), CryptoStreamMode.Write))
             {
-                using (CryptoStream cs = new CryptoStream(ms, encryptor.CreateDecryptor(), CryptoStreamMode.Write))
+                try
                 {
-                    try
-                    {
-                        cs.Write(cipherBytes, 0, cipherBytes.Length);
-                        cs.Close();
-                    }
-                    catch { }
+                    cs.Write(cipherBytes, 0, cipherBytes.Length);
+                    cs.Close();
                 }
-                cipherText = Encoding.Unicode.GetString(ms.ToArray());
+                catch { }
             }
+            cipherText = Encoding.Unicode.GetString(ms.ToArray());
         }
         return cipherText;
     }
 
 
-    public static string Stringthing(string lala, string date, string gamename)
+    public static string Stringthing(string game, string date, string gamename)
     {
         string final = "";
         string[] strArrayOne = new string[] { "" };
-        strArrayOne = CharKey(lala).Split(',');
+        strArrayOne = CharKey(game).Split(',');
         strArrayOne = strArrayOne.Skip(1).ToArray();
         string[] strResult = strArrayOne.Select(y => string.Concat(y.Reverse())).ToArray();
         string dateandstuff = gamename + " - " + date + Environment.NewLine + Environment.NewLine;
@@ -53,27 +52,21 @@ internal class FreeHacksDecrypt
 
     public static string DecryptStuff(string fluffy, string gamename)
     {
-        if (fluffy == "@@" || fluffy == "") { }
-
+        string DecryptString = Decrypt(fluffy);
+        if (DecryptString.StartsWith("Y"))
+        {
+            string letsrockandroll = "N" + DecryptString.Substring(DecryptString.IndexOf('@') + 2);
+            string Date = letsrockandroll.Split('N', '@')[1];
+            string Decoded = letsrockandroll.Replace("@@", ",");
+            return Stringthing(Decoded, Date, gamename);
+        }
         else
         {
-            string DecryptString = Decrypt(fluffy);
-            if (DecryptString.StartsWith("Y"))
-            {
-                string letsrockandroll = "N" + DecryptString.Substring(DecryptString.IndexOf('@') + 2);
-                string Date = letsrockandroll.Split('N', '@')[1];
-                string Decoded = letsrockandroll.Replace("@@", ",");
-                return Stringthing(Decoded, Date, gamename);
-            }
-            else
-            {
-                string letsrockandroll = DecryptString.Substring(1);
-                string Date = letsrockandroll.Split('N', '@')[0];
-                string Decoded = DecryptString.Replace("@@", ",");
-                return Stringthing(Decoded, Date, gamename);
-            }
+            string letsrockandroll = DecryptString.Substring(1);
+            string Date = letsrockandroll.Split('N', '@')[0];
+            string Decoded = DecryptString.Replace("@@", ",");
+            return Stringthing(Decoded, Date, gamename);
         }
-        return "";
     }
 
     public static string CharKey(string line)

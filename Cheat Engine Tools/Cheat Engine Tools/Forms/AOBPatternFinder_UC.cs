@@ -108,7 +108,6 @@ namespace Cheat_Engine_Tools.Forms
 				Compare_metroButton.Enabled = false;
 				FormatAOBs_metroButton.Enabled = true;
 				JakeFromStateFarm = 0;
-
 			}
 		}
 	}

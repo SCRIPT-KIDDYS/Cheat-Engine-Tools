@@ -36,17 +36,19 @@
             // FreeHacks_Codes_TextBox
             // 
             this.FreeHacks_Codes_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FreeHacks_Codes_TextBox.Enabled = false;
             this.FreeHacks_Codes_TextBox.Location = new System.Drawing.Point(5, 45);
             this.FreeHacks_Codes_TextBox.Name = "FreeHacks_Codes_TextBox";
             this.FreeHacks_Codes_TextBox.ReadOnly = true;
             this.FreeHacks_Codes_TextBox.Size = new System.Drawing.Size(626, 189);
             this.FreeHacks_Codes_TextBox.TabIndex = 1;
             this.FreeHacks_Codes_TextBox.TabStop = false;
-            this.FreeHacks_Codes_TextBox.Text = "";
+            this.FreeHacks_Codes_TextBox.Text = "CTMT is OFFLINE. This section will be removed or changed to another server.";
             // 
             // FreeHacks_Games_ComboBox
             // 
             this.FreeHacks_Games_ComboBox.DropDownHeight = 240;
+            this.FreeHacks_Games_ComboBox.Enabled = false;
             this.FreeHacks_Games_ComboBox.FormattingEnabled = true;
             this.FreeHacks_Games_ComboBox.IntegralHeight = false;
             this.FreeHacks_Games_ComboBox.ItemHeight = 23;
