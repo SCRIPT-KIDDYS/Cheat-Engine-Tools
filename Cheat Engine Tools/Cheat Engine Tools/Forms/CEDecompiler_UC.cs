@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Windows.Forms;
+using static Helpers;
 
 namespace Cheat_Engine_Tools.Forms
 {
@@ -8,9 +9,7 @@ namespace Cheat_Engine_Tools.Forms
         public CEDecompiler_UC() => InitializeComponent();
 
         void CEDecompiler_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
-        }
+        { if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy; }
 
         private void CEDecompiler_DragDrop(object sender, DragEventArgs e)
         {
@@ -18,7 +17,7 @@ namespace Cheat_Engine_Tools.Forms
             foreach (string file in files)
                 if (Path.GetFileName(file).ToLower().Contains(".cetrainer") == true)
                     if (CEDecompile.DecryptTrainer(file) == true)
-                        MessageBox.Show("Done");
+                    { ShakeMe("Done", MessageType.INFO, MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
     }
 }

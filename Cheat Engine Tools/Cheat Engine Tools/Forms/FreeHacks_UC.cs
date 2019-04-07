@@ -3,14 +3,25 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
+using System.Threading;
+using System.IO;
 
 namespace Cheat_Engine_Tools.Forms
 {
     public partial class FreeHacks_UC : UserControl
     {
+
         public FreeHacks_UC()
         {
             InitializeComponent();
+            //Thread IsWebsiteActive = new Thread(CheckWebAddress);
+            //IsWebsiteActive.Start();
+
+            ////  CTMT is OFFLINE at the moment. This section REMOVED!  ////
+        }
+
+        private void CheckWebAddress()
+        {
             string TempText = null;
             String DownloadString = "http://cyberterminators.co/details-v2.xml";
             XmlDocument XDocument = new XmlDocument();

@@ -15,8 +15,8 @@ namespace Cheat_Engine_Tools.Forms
 			int R = random.Next(0, 255);
 			int G = random.Next(0, 255);
 			int B = random.Next(0, 255);
-			metroLabel1.ForeColor = Color.FromArgb(B, G, R, A);
-			metroLabel2.ForeColor = Color.FromArgb(A, R, G, B);
+			Left_Label.ForeColor = Color.FromArgb(B, G, R, A);
+			Right_Label.ForeColor = Color.FromArgb(A, R, G, B);
 		}
 	}
 }

@@ -190,7 +190,6 @@ namespace MetroFramework.Controls
         [EditorBrowsable(EditorBrowsableState.Always)]
         [DefaultValue("")]
         [Category(MetroDefaults.PropertyCategory.Appearance)]
-        [Obsolete("Use watermark")]
         public string PromptText
         {
             get { return baseTextBox.WaterMark; }

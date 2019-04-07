@@ -28,57 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.InjectDLL_metroButton = new MetroFramework.Controls.MetroButton();
-            this.RefreshProcessList_metroButton = new MetroFramework.Controls.MetroButton();
-            this.ProcessList_metroComboBox = new MetroFramework.Controls.MetroComboBox();
+            this.DLLInjector_openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.InjectDLL_Button = new MetroFramework.Controls.MetroButton();
+            this.RefreshProcessList_Button = new MetroFramework.Controls.MetroButton();
+            this.ProcessList_ComboBox = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
-            // openFileDialog1
+            // DLLInjector_openFileDialog
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.DLLInjector_openFileDialog.FileName = "openFileDialog1";
             // 
-            // InjectDLL_metroButton
+            // InjectDLL_Button
             // 
-            this.InjectDLL_metroButton.Location = new System.Drawing.Point(3, 67);
-            this.InjectDLL_metroButton.Name = "InjectDLL_metroButton";
-            this.InjectDLL_metroButton.Size = new System.Drawing.Size(630, 23);
-            this.InjectDLL_metroButton.TabIndex = 2;
-            this.InjectDLL_metroButton.Text = "Inject DLL";
-            this.InjectDLL_metroButton.UseSelectable = true;
-            this.InjectDLL_metroButton.UseVisualStyleBackColor = true;
-            this.InjectDLL_metroButton.Click += new System.EventHandler(this.InjectDLL_metroButton_Click);
+            this.InjectDLL_Button.Location = new System.Drawing.Point(3, 67);
+            this.InjectDLL_Button.Name = "InjectDLL_Button";
+            this.InjectDLL_Button.Size = new System.Drawing.Size(630, 23);
+            this.InjectDLL_Button.TabIndex = 2;
+            this.InjectDLL_Button.Text = "Inject DLL";
+            this.InjectDLL_Button.UseSelectable = true;
+            this.InjectDLL_Button.UseVisualStyleBackColor = true;
+            this.InjectDLL_Button.Click += new System.EventHandler(this.InjectDLL_metroButton_Click);
             // 
-            // RefreshProcessList_metroButton
+            // RefreshProcessList_Button
             // 
-            this.RefreshProcessList_metroButton.Location = new System.Drawing.Point(3, 38);
-            this.RefreshProcessList_metroButton.Name = "RefreshProcessList_metroButton";
-            this.RefreshProcessList_metroButton.Size = new System.Drawing.Size(630, 23);
-            this.RefreshProcessList_metroButton.TabIndex = 1;
-            this.RefreshProcessList_metroButton.Text = "Refresh Process List";
-            this.RefreshProcessList_metroButton.UseSelectable = true;
-            this.RefreshProcessList_metroButton.UseVisualStyleBackColor = true;
-            this.RefreshProcessList_metroButton.Click += new System.EventHandler(this.RefreshProcessList_metroButton_Click);
+            this.RefreshProcessList_Button.Location = new System.Drawing.Point(3, 38);
+            this.RefreshProcessList_Button.Name = "RefreshProcessList_Button";
+            this.RefreshProcessList_Button.Size = new System.Drawing.Size(630, 23);
+            this.RefreshProcessList_Button.TabIndex = 1;
+            this.RefreshProcessList_Button.Text = "Refresh Process List";
+            this.RefreshProcessList_Button.UseSelectable = true;
+            this.RefreshProcessList_Button.UseVisualStyleBackColor = true;
+            this.RefreshProcessList_Button.Click += new System.EventHandler(this.RefreshProcessList_metroButton_Click);
             // 
-            // ProcessList_metroComboBox
+            // ProcessList_ComboBox
             // 
-            this.ProcessList_metroComboBox.DropDownHeight = 250;
-            this.ProcessList_metroComboBox.FormattingEnabled = true;
-            this.ProcessList_metroComboBox.IntegralHeight = false;
-            this.ProcessList_metroComboBox.ItemHeight = 23;
-            this.ProcessList_metroComboBox.Location = new System.Drawing.Point(3, 3);
-            this.ProcessList_metroComboBox.Name = "ProcessList_metroComboBox";
-            this.ProcessList_metroComboBox.Size = new System.Drawing.Size(630, 29);
-            this.ProcessList_metroComboBox.TabIndex = 0;
-            this.ProcessList_metroComboBox.UseSelectable = true;
+            this.ProcessList_ComboBox.DropDownHeight = 250;
+            this.ProcessList_ComboBox.FormattingEnabled = true;
+            this.ProcessList_ComboBox.IntegralHeight = false;
+            this.ProcessList_ComboBox.ItemHeight = 23;
+            this.ProcessList_ComboBox.Location = new System.Drawing.Point(3, 3);
+            this.ProcessList_ComboBox.Name = "ProcessList_ComboBox";
+            this.ProcessList_ComboBox.Size = new System.Drawing.Size(630, 29);
+            this.ProcessList_ComboBox.TabIndex = 0;
+            this.ProcessList_ComboBox.UseSelectable = true;
             // 
             // DLLInjector_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.InjectDLL_metroButton);
-            this.Controls.Add(this.RefreshProcessList_metroButton);
-            this.Controls.Add(this.ProcessList_metroComboBox);
+            this.Controls.Add(this.InjectDLL_Button);
+            this.Controls.Add(this.RefreshProcessList_Button);
+            this.Controls.Add(this.ProcessList_ComboBox);
             this.Name = "DLLInjector_UC";
             this.Size = new System.Drawing.Size(636, 276);
             this.ResumeLayout(false);
@@ -87,9 +87,9 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroComboBox ProcessList_metroComboBox;
-        private MetroFramework.Controls.MetroButton RefreshProcessList_metroButton;
-        private MetroFramework.Controls.MetroButton InjectDLL_metroButton;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private MetroFramework.Controls.MetroComboBox ProcessList_ComboBox;
+        private MetroFramework.Controls.MetroButton RefreshProcessList_Button;
+        private MetroFramework.Controls.MetroButton InjectDLL_Button;
+        private System.Windows.Forms.OpenFileDialog DLLInjector_openFileDialog;
     }
 }

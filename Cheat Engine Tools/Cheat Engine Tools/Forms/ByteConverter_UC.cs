@@ -2,15 +2,15 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
+using static Helpers;
 
-namespace Cheat_Engine_Tools
+namespace Cheat_Engine_Tools.Forms
 {
     public partial class ByteConverter_UC : UserControl
     {
         public ByteConverter_UC()
         {
             InitializeComponent();
-            ByteConverter Converter = new ByteConverter();
             Converter_FourByte_TextBox.DataBindings.Add("Text", Converter, "FourByte", false, DataSourceUpdateMode.OnPropertyChanged);
             Converter_FourBytex8_TextBox.DataBindings.Add("Text", Converter, "FourByte_x8", false, DataSourceUpdateMode.OnPropertyChanged);
             Converter_FourBytex8p6_TextBox.DataBindings.Add("Text", Converter, "FourByte_x8_p6", false, DataSourceUpdateMode.OnPropertyChanged);
@@ -40,7 +40,7 @@ namespace Cheat_Engine_Tools
         private void DataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Clipboard.SetText(ProcessList_GridView[e.ColumnIndex, e.RowIndex].Value.ToString());
-            MessageBox.Show(Clipboard.GetText() + " Copied to Clipboard.");
+            ShakeMe(Clipboard.GetText() + " Copied to Clipboard.", MessageType.INFO, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void RefreshProcesses_Button_Click(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace Cheat_Engine_Tools
                     Text = Converter_UnityFloatx32_TextBox.Text;
                     break;
             }
-            MessageBox.Show(Text + " Copied to Clipboard.");
+            ShakeMe(Text + " Copied to Clipboard.", MessageType.INFO, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

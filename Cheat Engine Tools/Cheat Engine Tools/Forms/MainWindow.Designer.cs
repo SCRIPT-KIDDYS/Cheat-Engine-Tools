@@ -29,227 +29,159 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            this.MainMenu_metroTabControl = new MetroFramework.Controls.MetroTabControl();
-            this.Welcome_Tab = new System.Windows.Forms.TabPage();
-            this.welcome1 = new Cheat_Engine_Tools.Forms.Welcome_UC();
-            this.Converters_Tab = new System.Windows.Forms.TabPage();
-            this.byteConverter_UC1 = new Cheat_Engine_Tools.ByteConverter_UC();
-            this.FreeHacks_Tab = new System.Windows.Forms.TabPage();
-            this.freeHacks1 = new Cheat_Engine_Tools.Forms.FreeHacks_UC();
-            this.CEDecompiler_Tab = new System.Windows.Forms.TabPage();
-            this.ceDecompiler1 = new Cheat_Engine_Tools.Forms.CEDecompiler_UC();
-            this.DLLInjector_Tab = new System.Windows.Forms.TabPage();
-            this.dllInjector_UC1 = new Cheat_Engine_Tools.Forms.DLLInjector_UC();
-            this.CEVersion_Tab = new System.Windows.Forms.TabPage();
-            this.ceVersion_UC1 = new Cheat_Engine_Tools.Forms.CEVersion_UC();
-            this.Links_Tab = new System.Windows.Forms.TabPage();
-            this.links_UC1 = new Cheat_Engine_Tools.Forms.Links_UC();
-            this.AOBPatternFinder_Tab = new System.Windows.Forms.TabPage();
-            this.aobPatternFinder_UC1 = new Cheat_Engine_Tools.Forms.AOBPatternFinder_UC();
             this.StyleManager = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.MainMenu_metroTabControl.SuspendLayout();
-            this.Welcome_Tab.SuspendLayout();
-            this.Converters_Tab.SuspendLayout();
-            this.FreeHacks_Tab.SuspendLayout();
-            this.CEDecompiler_Tab.SuspendLayout();
-            this.DLLInjector_Tab.SuspendLayout();
-            this.CEVersion_Tab.SuspendLayout();
-            this.Links_Tab.SuspendLayout();
-            this.AOBPatternFinder_Tab.SuspendLayout();
+            this.MainWindowMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.welcomeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cheatEngineToolsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.convertersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.decompilerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.versionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aOBPatternFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.othersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dLLInjectorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.warCommanderStringDecoderMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainWindowPanel = new MetroFramework.Controls.MetroPanel();
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
+            this.MainWindowMenuStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MainMenu_metroTabControl
-            // 
-            this.MainMenu_metroTabControl.Controls.Add(this.Welcome_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.Converters_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.FreeHacks_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.CEDecompiler_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.DLLInjector_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.CEVersion_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.AOBPatternFinder_Tab);
-            this.MainMenu_metroTabControl.Controls.Add(this.Links_Tab);
-            this.MainMenu_metroTabControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MainMenu_metroTabControl.Location = new System.Drawing.Point(5, 60);
-            this.MainMenu_metroTabControl.Multiline = true;
-            this.MainMenu_metroTabControl.Name = "MainMenu_metroTabControl";
-            this.MainMenu_metroTabControl.Padding = new System.Drawing.Point(0, 0);
-            this.MainMenu_metroTabControl.SelectedIndex = 0;
-            this.MainMenu_metroTabControl.Size = new System.Drawing.Size(650, 338);
-            this.MainMenu_metroTabControl.TabIndex = 0;
-            this.MainMenu_metroTabControl.TabStop = false;
-            this.MainMenu_metroTabControl.UseSelectable = true;
-            // 
-            // Welcome_Tab
-            // 
-            this.Welcome_Tab.Controls.Add(this.welcome1);
-            this.Welcome_Tab.Location = new System.Drawing.Point(4, 52);
-            this.Welcome_Tab.Name = "Welcome_Tab";
-            this.Welcome_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Welcome_Tab.Size = new System.Drawing.Size(642, 282);
-            this.Welcome_Tab.TabIndex = 1;
-            this.Welcome_Tab.Text = "Welcome";
-            this.Welcome_Tab.UseVisualStyleBackColor = true;
-            // 
-            // welcome1
-            // 
-            this.welcome1.BackColor = System.Drawing.Color.Transparent;
-            this.welcome1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("welcome1.BackgroundImage")));
-            this.welcome1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.welcome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.welcome1.Location = new System.Drawing.Point(3, 3);
-            this.welcome1.Name = "welcome1";
-            this.welcome1.Size = new System.Drawing.Size(636, 276);
-            this.welcome1.TabIndex = 0;
-            // 
-            // Converters_Tab
-            // 
-            this.Converters_Tab.Controls.Add(this.byteConverter_UC1);
-            this.Converters_Tab.Location = new System.Drawing.Point(4, 28);
-            this.Converters_Tab.Name = "Converters_Tab";
-            this.Converters_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Converters_Tab.Size = new System.Drawing.Size(642, 306);
-            this.Converters_Tab.TabIndex = 0;
-            this.Converters_Tab.Text = "Converters";
-            this.Converters_Tab.UseVisualStyleBackColor = true;
-            // 
-            // byteConverter_UC1
-            // 
-            this.byteConverter_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.byteConverter_UC1.Location = new System.Drawing.Point(3, 3);
-            this.byteConverter_UC1.Name = "byteConverter_UC1";
-            this.byteConverter_UC1.Padding = new System.Windows.Forms.Padding(5);
-            this.byteConverter_UC1.Size = new System.Drawing.Size(636, 300);
-            this.byteConverter_UC1.TabIndex = 0;
-            // 
-            // FreeHacks_Tab
-            // 
-            this.FreeHacks_Tab.Controls.Add(this.freeHacks1);
-            this.FreeHacks_Tab.Location = new System.Drawing.Point(4, 28);
-            this.FreeHacks_Tab.Name = "FreeHacks_Tab";
-            this.FreeHacks_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.FreeHacks_Tab.Size = new System.Drawing.Size(642, 306);
-            this.FreeHacks_Tab.TabIndex = 3;
-            this.FreeHacks_Tab.Text = "Free Hacks";
-            this.FreeHacks_Tab.UseVisualStyleBackColor = true;
-            // 
-            // freeHacks1
-            // 
-            this.freeHacks1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.freeHacks1.Location = new System.Drawing.Point(3, 3);
-            this.freeHacks1.Name = "freeHacks1";
-            this.freeHacks1.Size = new System.Drawing.Size(636, 300);
-            this.freeHacks1.TabIndex = 0;
-            // 
-            // CEDecompiler_Tab
-            // 
-            this.CEDecompiler_Tab.Controls.Add(this.ceDecompiler1);
-            this.CEDecompiler_Tab.Location = new System.Drawing.Point(4, 28);
-            this.CEDecompiler_Tab.Name = "CEDecompiler_Tab";
-            this.CEDecompiler_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.CEDecompiler_Tab.Size = new System.Drawing.Size(642, 306);
-            this.CEDecompiler_Tab.TabIndex = 4;
-            this.CEDecompiler_Tab.Text = "CE Decompiler";
-            this.CEDecompiler_Tab.UseVisualStyleBackColor = true;
-            // 
-            // ceDecompiler1
-            // 
-            this.ceDecompiler1.AllowDrop = true;
-            this.ceDecompiler1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ceDecompiler1.BackgroundImage")));
-            this.ceDecompiler1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ceDecompiler1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ceDecompiler1.Location = new System.Drawing.Point(3, 3);
-            this.ceDecompiler1.Name = "ceDecompiler1";
-            this.ceDecompiler1.Size = new System.Drawing.Size(636, 300);
-            this.ceDecompiler1.TabIndex = 0;
-            // 
-            // DLLInjector_Tab
-            // 
-            this.DLLInjector_Tab.Controls.Add(this.dllInjector_UC1);
-            this.DLLInjector_Tab.Location = new System.Drawing.Point(4, 28);
-            this.DLLInjector_Tab.Name = "DLLInjector_Tab";
-            this.DLLInjector_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.DLLInjector_Tab.Size = new System.Drawing.Size(642, 306);
-            this.DLLInjector_Tab.TabIndex = 6;
-            this.DLLInjector_Tab.Text = "DLL Injector";
-            this.DLLInjector_Tab.UseVisualStyleBackColor = true;
-            // 
-            // dllInjector_UC1
-            // 
-            this.dllInjector_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dllInjector_UC1.Location = new System.Drawing.Point(3, 3);
-            this.dllInjector_UC1.Name = "dllInjector_UC1";
-            this.dllInjector_UC1.Size = new System.Drawing.Size(636, 300);
-            this.dllInjector_UC1.TabIndex = 0;
-            // 
-            // CEVersion_Tab
-            // 
-            this.CEVersion_Tab.Controls.Add(this.ceVersion_UC1);
-            this.CEVersion_Tab.Location = new System.Drawing.Point(4, 28);
-            this.CEVersion_Tab.Name = "CEVersion_Tab";
-            this.CEVersion_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.CEVersion_Tab.Size = new System.Drawing.Size(642, 306);
-            this.CEVersion_Tab.TabIndex = 7;
-            this.CEVersion_Tab.Text = "CE Version";
-            this.CEVersion_Tab.UseVisualStyleBackColor = true;
-            // 
-            // ceVersion_UC1
-            // 
-            this.ceVersion_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ceVersion_UC1.Location = new System.Drawing.Point(3, 3);
-            this.ceVersion_UC1.Name = "ceVersion_UC1";
-            this.ceVersion_UC1.Size = new System.Drawing.Size(636, 300);
-            this.ceVersion_UC1.TabIndex = 0;
-            // 
-            // Links_Tab
-            // 
-            this.Links_Tab.Controls.Add(this.links_UC1);
-            this.Links_Tab.Location = new System.Drawing.Point(4, 52);
-            this.Links_Tab.Name = "Links_Tab";
-            this.Links_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Links_Tab.Size = new System.Drawing.Size(642, 282);
-            this.Links_Tab.TabIndex = 5;
-            this.Links_Tab.Text = "Links";
-            this.Links_Tab.UseVisualStyleBackColor = true;
-            // 
-            // links_UC1
-            // 
-            this.links_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.links_UC1.Location = new System.Drawing.Point(3, 3);
-            this.links_UC1.Name = "links_UC1";
-            this.links_UC1.Size = new System.Drawing.Size(636, 276);
-            this.links_UC1.TabIndex = 0;
-            // 
-            // AOBPatternFinder_Tab
-            // 
-            this.AOBPatternFinder_Tab.BackColor = System.Drawing.Color.Transparent;
-            this.AOBPatternFinder_Tab.Controls.Add(this.aobPatternFinder_UC1);
-            this.AOBPatternFinder_Tab.Location = new System.Drawing.Point(4, 28);
-            this.AOBPatternFinder_Tab.Name = "AOBPatternFinder_Tab";
-            this.AOBPatternFinder_Tab.Size = new System.Drawing.Size(642, 306);
-            this.AOBPatternFinder_Tab.TabIndex = 8;
-            this.AOBPatternFinder_Tab.Text = "AOB Pattern Finder";
-            // 
-            // aobPatternFinder_UC1
-            // 
-            this.aobPatternFinder_UC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aobPatternFinder_UC1.Location = new System.Drawing.Point(0, 0);
-            this.aobPatternFinder_UC1.Name = "aobPatternFinder_UC1";
-            this.aobPatternFinder_UC1.Size = new System.Drawing.Size(642, 306);
-            this.aobPatternFinder_UC1.TabIndex = 0;
             // 
             // StyleManager
             // 
             this.StyleManager.Owner = this;
             this.StyleManager.Style = MetroFramework.MetroColorStyle.Teal;
             // 
+            // MainWindowMenuStrip
+            // 
+            this.MainWindowMenuStrip.GripMargin = new System.Windows.Forms.Padding(0);
+            this.MainWindowMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.welcomeMenuItem,
+            this.cheatEngineToolsMenuItem,
+            this.linksMenuItem,
+            this.othersMenuItem,
+            this.helpMenuItem});
+            this.MainWindowMenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.MainWindowMenuStrip.Location = new System.Drawing.Point(5, 60);
+            this.MainWindowMenuStrip.Name = "MainWindowMenuStrip";
+            this.MainWindowMenuStrip.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.MainWindowMenuStrip.Size = new System.Drawing.Size(650, 23);
+            this.MainWindowMenuStrip.TabIndex = 1;
+            // 
+            // welcomeMenuItem
+            // 
+            this.welcomeMenuItem.Name = "welcomeMenuItem";
+            this.welcomeMenuItem.Size = new System.Drawing.Size(69, 19);
+            this.welcomeMenuItem.Text = "Welcome";
+            this.welcomeMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // cheatEngineToolsMenuItem
+            // 
+            this.cheatEngineToolsMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.convertersMenuItem,
+            this.decompilerMenuItem,
+            this.versionMenuItem,
+            this.aOBPatternFinderToolStripMenuItem});
+            this.cheatEngineToolsMenuItem.Name = "cheatEngineToolsMenuItem";
+            this.cheatEngineToolsMenuItem.Size = new System.Drawing.Size(121, 19);
+            this.cheatEngineToolsMenuItem.Text = "Cheat Engine Tools";
+            // 
+            // convertersMenuItem
+            // 
+            this.convertersMenuItem.Name = "convertersMenuItem";
+            this.convertersMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.convertersMenuItem.Text = "Converters";
+            this.convertersMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // decompilerMenuItem
+            // 
+            this.decompilerMenuItem.Name = "decompilerMenuItem";
+            this.decompilerMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.decompilerMenuItem.Text = "Decompiler";
+            this.decompilerMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // versionMenuItem
+            // 
+            this.versionMenuItem.Name = "versionMenuItem";
+            this.versionMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.versionMenuItem.Text = "CE Version";
+            this.versionMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // aOBPatternFinderToolStripMenuItem
+            // 
+            this.aOBPatternFinderToolStripMenuItem.Name = "aOBPatternFinderToolStripMenuItem";
+            this.aOBPatternFinderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aOBPatternFinderToolStripMenuItem.Text = "AOB Pattern Finder";
+            this.aOBPatternFinderToolStripMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // linksMenuItem
+            // 
+            this.linksMenuItem.Name = "linksMenuItem";
+            this.linksMenuItem.Size = new System.Drawing.Size(46, 19);
+            this.linksMenuItem.Text = "Links";
+            this.linksMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // othersMenuItem
+            // 
+            this.othersMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dLLInjectorMenuItem,
+            this.warCommanderStringDecoderMenuItem});
+            this.othersMenuItem.Name = "othersMenuItem";
+            this.othersMenuItem.Size = new System.Drawing.Size(54, 19);
+            this.othersMenuItem.Text = "Others";
+            // 
+            // dLLInjectorMenuItem
+            // 
+            this.dLLInjectorMenuItem.Name = "dLLInjectorMenuItem";
+            this.dLLInjectorMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.dLLInjectorMenuItem.Text = "DLL Injector";
+            this.dLLInjectorMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // warCommanderStringDecoderMenuItem
+            // 
+            this.warCommanderStringDecoderMenuItem.Name = "warCommanderStringDecoderMenuItem";
+            this.warCommanderStringDecoderMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.warCommanderStringDecoderMenuItem.Text = "WarCommander String Decoder";
+            this.warCommanderStringDecoderMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // helpMenuItem
+            // 
+            this.helpMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutMenuItem});
+            this.helpMenuItem.Name = "helpMenuItem";
+            this.helpMenuItem.Size = new System.Drawing.Size(44, 19);
+            this.helpMenuItem.Text = "Help";
+            // 
+            // aboutMenuItem
+            // 
+            this.aboutMenuItem.Name = "aboutMenuItem";
+            this.aboutMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutMenuItem.Text = "About";
+            this.aboutMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // MainWindowPanel
+            // 
+            this.MainWindowPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MainWindowPanel.HorizontalScrollbarBarColor = true;
+            this.MainWindowPanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.MainWindowPanel.HorizontalScrollbarSize = 10;
+            this.MainWindowPanel.Location = new System.Drawing.Point(5, 83);
+            this.MainWindowPanel.Name = "MainWindowPanel";
+            this.MainWindowPanel.Size = new System.Drawing.Size(650, 314);
+            this.MainWindowPanel.TabIndex = 2;
+            this.MainWindowPanel.VerticalScrollbarBarColor = true;
+            this.MainWindowPanel.VerticalScrollbarHighlightOnWheel = false;
+            this.MainWindowPanel.VerticalScrollbarSize = 10;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 403);
-            this.Controls.Add(this.MainMenu_metroTabControl);
+            this.Controls.Add(this.MainWindowPanel);
+            this.Controls.Add(this.MainWindowMenuStrip);
+            this.MainMenuStrip = this.MainWindowMenuStrip;
             this.MaximizeBox = false;
             this.Name = "MainWindow";
             this.Padding = new System.Windows.Forms.Padding(5, 60, 5, 5);
@@ -257,39 +189,29 @@
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Cheat Engine Tools";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
-            this.MainMenu_metroTabControl.ResumeLayout(false);
-            this.Welcome_Tab.ResumeLayout(false);
-            this.Converters_Tab.ResumeLayout(false);
-            this.FreeHacks_Tab.ResumeLayout(false);
-            this.CEDecompiler_Tab.ResumeLayout(false);
-            this.DLLInjector_Tab.ResumeLayout(false);
-            this.CEVersion_Tab.ResumeLayout(false);
-            this.Links_Tab.ResumeLayout(false);
-            this.AOBPatternFinder_Tab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
+            this.MainWindowMenuStrip.ResumeLayout(false);
+            this.MainWindowMenuStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroTabControl MainMenu_metroTabControl;
-        private System.Windows.Forms.TabPage Converters_Tab;
-        private System.Windows.Forms.TabPage Welcome_Tab;
         private new MetroFramework.Components.MetroStyleManager StyleManager;
-        private ByteConverter_UC byteConverter_UC1;
-        private System.Windows.Forms.TabPage FreeHacks_Tab;
-        private System.Windows.Forms.TabPage CEDecompiler_Tab;
-        private System.Windows.Forms.TabPage Links_Tab;
-        private System.Windows.Forms.TabPage DLLInjector_Tab;
-        private Forms.Welcome_UC welcome1;
-        private Forms.FreeHacks_UC freeHacks1;
-        private Forms.CEDecompiler_UC ceDecompiler1;
-        private Forms.Links_UC links_UC1;
-        private Forms.DLLInjector_UC dllInjector_UC1;
-		private System.Windows.Forms.TabPage CEVersion_Tab;
-		private Forms.CEVersion_UC ceVersion_UC1;
-		private System.Windows.Forms.TabPage AOBPatternFinder_Tab;
-		private Forms.AOBPatternFinder_UC aobPatternFinder_UC1;
-	}
+        private System.Windows.Forms.MenuStrip MainWindowMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem welcomeMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cheatEngineToolsMenuItem;
+        private MetroFramework.Controls.MetroPanel MainWindowPanel;
+        private System.Windows.Forms.ToolStripMenuItem convertersMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem decompilerMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem versionMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem othersMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dLLInjectorMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem warCommanderStringDecoderMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aOBPatternFinderToolStripMenuItem;
+    }
 }
