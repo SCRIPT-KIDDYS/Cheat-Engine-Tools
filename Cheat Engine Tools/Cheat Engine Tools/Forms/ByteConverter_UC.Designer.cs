@@ -73,7 +73,7 @@
             this.ProcessList_GridView.ReadOnly = true;
             this.ProcessList_GridView.RowHeadersVisible = false;
             this.ProcessList_GridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ProcessList_GridView.Size = new System.Drawing.Size(380, 208);
+            this.ProcessList_GridView.Size = new System.Drawing.Size(390, 249);
             this.ProcessList_GridView.TabIndex = 19;
             this.ProcessList_GridView.TabStop = false;
             this.ProcessList_GridView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentDoubleClick);
@@ -103,7 +103,7 @@
             // Copy_Label
             // 
             this.Copy_Label.AutoSize = true;
-            this.Copy_Label.Location = new System.Drawing.Point(500, 250);
+            this.Copy_Label.Location = new System.Drawing.Point(509, 291);
             this.Copy_Label.Name = "Copy_Label";
             this.Copy_Label.Size = new System.Drawing.Size(133, 19);
             this.Copy_Label.TabIndex = 21;
@@ -112,10 +112,11 @@
             // 
             // RefreshProcesses_Button
             // 
-            this.RefreshProcesses_Button.Location = new System.Drawing.Point(252, 222);
+            this.RefreshProcesses_Button.Location = new System.Drawing.Point(252, 263);
             this.RefreshProcesses_Button.Name = "RefreshProcesses_Button";
-            this.RefreshProcesses_Button.Size = new System.Drawing.Size(380, 25);
+            this.RefreshProcesses_Button.Size = new System.Drawing.Size(390, 25);
             this.RefreshProcesses_Button.TabIndex = 20;
+            this.RefreshProcesses_Button.TabStop = false;
             this.RefreshProcesses_Button.Text = "Refresh Process List";
             this.RefreshProcesses_Button.UseSelectable = true;
             this.RefreshProcesses_Button.UseVisualStyleBackColor = true;
@@ -123,7 +124,7 @@
             // 
             // UnityFloatx32_Label
             // 
-            this.UnityFloatx32_Label.Location = new System.Drawing.Point(8, 222);
+            this.UnityFloatx32_Label.Location = new System.Drawing.Point(8, 225);
             this.UnityFloatx32_Label.Name = "UnityFloatx32_Label";
             this.UnityFloatx32_Label.Size = new System.Drawing.Size(96, 25);
             this.UnityFloatx32_Label.TabIndex = 8;
@@ -132,7 +133,7 @@
             // 
             // IEEEx64_Label
             // 
-            this.IEEEx64_Label.Location = new System.Drawing.Point(8, 191);
+            this.IEEEx64_Label.Location = new System.Drawing.Point(8, 194);
             this.IEEEx64_Label.Name = "IEEEx64_Label";
             this.IEEEx64_Label.Size = new System.Drawing.Size(96, 25);
             this.IEEEx64_Label.TabIndex = 7;
@@ -141,7 +142,7 @@
             // 
             // IEEEx32_Label
             // 
-            this.IEEEx32_Label.Location = new System.Drawing.Point(8, 160);
+            this.IEEEx32_Label.Location = new System.Drawing.Point(8, 163);
             this.IEEEx32_Label.Name = "IEEEx32_Label";
             this.IEEEx32_Label.Size = new System.Drawing.Size(96, 25);
             this.IEEEx32_Label.TabIndex = 6;
@@ -150,7 +151,7 @@
             // 
             // U30_Label
             // 
-            this.U30_Label.Location = new System.Drawing.Point(8, 129);
+            this.U30_Label.Location = new System.Drawing.Point(8, 132);
             this.U30_Label.Name = "U30_Label";
             this.U30_Label.Size = new System.Drawing.Size(96, 25);
             this.U30_Label.TabIndex = 5;
@@ -159,7 +160,7 @@
             // 
             // Hex_Label
             // 
-            this.Hex_Label.Location = new System.Drawing.Point(8, 98);
+            this.Hex_Label.Location = new System.Drawing.Point(8, 101);
             this.Hex_Label.Name = "Hex_Label";
             this.Hex_Label.Size = new System.Drawing.Size(96, 25);
             this.Hex_Label.TabIndex = 4;
@@ -168,7 +169,7 @@
             // 
             // _4byte_x8_p6_Label
             // 
-            this._4byte_x8_p6_Label.Location = new System.Drawing.Point(8, 67);
+            this._4byte_x8_p6_Label.Location = new System.Drawing.Point(8, 70);
             this._4byte_x8_p6_Label.Name = "_4byte_x8_p6_Label";
             this._4byte_x8_p6_Label.Size = new System.Drawing.Size(96, 25);
             this._4byte_x8_p6_Label.TabIndex = 3;
@@ -177,7 +178,7 @@
             // 
             // _4bytex8_Label
             // 
-            this._4bytex8_Label.Location = new System.Drawing.Point(8, 36);
+            this._4bytex8_Label.Location = new System.Drawing.Point(8, 39);
             this._4bytex8_Label.Name = "_4bytex8_Label";
             this._4bytex8_Label.Size = new System.Drawing.Size(96, 25);
             this._4bytex8_Label.TabIndex = 2;
@@ -186,7 +187,7 @@
             // 
             // _4byte_Label
             // 
-            this._4byte_Label.Location = new System.Drawing.Point(8, 5);
+            this._4byte_Label.Location = new System.Drawing.Point(8, 8);
             this._4byte_Label.Name = "_4byte_Label";
             this._4byte_Label.Size = new System.Drawing.Size(96, 25);
             this._4byte_Label.TabIndex = 1;
@@ -208,7 +209,7 @@
             this.Converter_UnityFloatx32_TextBox.CustomButton.UseSelectable = true;
             this.Converter_UnityFloatx32_TextBox.CustomButton.Visible = false;
             this.Converter_UnityFloatx32_TextBox.Lines = new string[0];
-            this.Converter_UnityFloatx32_TextBox.Location = new System.Drawing.Point(110, 222);
+            this.Converter_UnityFloatx32_TextBox.Location = new System.Drawing.Point(110, 225);
             this.Converter_UnityFloatx32_TextBox.MaxLength = 32767;
             this.Converter_UnityFloatx32_TextBox.Name = "Converter_UnityFloatx32_TextBox";
             this.Converter_UnityFloatx32_TextBox.PasswordChar = '\0';
@@ -219,6 +220,7 @@
             this.Converter_UnityFloatx32_TextBox.ShortcutsEnabled = true;
             this.Converter_UnityFloatx32_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_UnityFloatx32_TextBox.TabIndex = 8;
+            this.Converter_UnityFloatx32_TextBox.TabStop = false;
             this.Converter_UnityFloatx32_TextBox.UseSelectable = true;
             this.Converter_UnityFloatx32_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_UnityFloatx32_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -238,7 +240,7 @@
             this.Converter_Ieeex64_TextBox.CustomButton.UseSelectable = true;
             this.Converter_Ieeex64_TextBox.CustomButton.Visible = false;
             this.Converter_Ieeex64_TextBox.Lines = new string[0];
-            this.Converter_Ieeex64_TextBox.Location = new System.Drawing.Point(110, 191);
+            this.Converter_Ieeex64_TextBox.Location = new System.Drawing.Point(110, 194);
             this.Converter_Ieeex64_TextBox.MaxLength = 32767;
             this.Converter_Ieeex64_TextBox.Name = "Converter_Ieeex64_TextBox";
             this.Converter_Ieeex64_TextBox.PasswordChar = '\0';
@@ -249,6 +251,7 @@
             this.Converter_Ieeex64_TextBox.ShortcutsEnabled = true;
             this.Converter_Ieeex64_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_Ieeex64_TextBox.TabIndex = 7;
+            this.Converter_Ieeex64_TextBox.TabStop = false;
             this.Converter_Ieeex64_TextBox.UseSelectable = true;
             this.Converter_Ieeex64_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_Ieeex64_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -268,7 +271,7 @@
             this.Converter_Ieeex32_TextBox.CustomButton.UseSelectable = true;
             this.Converter_Ieeex32_TextBox.CustomButton.Visible = false;
             this.Converter_Ieeex32_TextBox.Lines = new string[0];
-            this.Converter_Ieeex32_TextBox.Location = new System.Drawing.Point(110, 160);
+            this.Converter_Ieeex32_TextBox.Location = new System.Drawing.Point(110, 163);
             this.Converter_Ieeex32_TextBox.MaxLength = 32767;
             this.Converter_Ieeex32_TextBox.Name = "Converter_Ieeex32_TextBox";
             this.Converter_Ieeex32_TextBox.PasswordChar = '\0';
@@ -279,6 +282,7 @@
             this.Converter_Ieeex32_TextBox.ShortcutsEnabled = true;
             this.Converter_Ieeex32_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_Ieeex32_TextBox.TabIndex = 6;
+            this.Converter_Ieeex32_TextBox.TabStop = false;
             this.Converter_Ieeex32_TextBox.UseSelectable = true;
             this.Converter_Ieeex32_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_Ieeex32_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -298,7 +302,7 @@
             this.Converter_U30_TextBox.CustomButton.UseSelectable = true;
             this.Converter_U30_TextBox.CustomButton.Visible = false;
             this.Converter_U30_TextBox.Lines = new string[0];
-            this.Converter_U30_TextBox.Location = new System.Drawing.Point(110, 129);
+            this.Converter_U30_TextBox.Location = new System.Drawing.Point(110, 132);
             this.Converter_U30_TextBox.MaxLength = 32767;
             this.Converter_U30_TextBox.Name = "Converter_U30_TextBox";
             this.Converter_U30_TextBox.PasswordChar = '\0';
@@ -309,6 +313,7 @@
             this.Converter_U30_TextBox.ShortcutsEnabled = true;
             this.Converter_U30_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_U30_TextBox.TabIndex = 5;
+            this.Converter_U30_TextBox.TabStop = false;
             this.Converter_U30_TextBox.UseSelectable = true;
             this.Converter_U30_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_U30_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -328,7 +333,7 @@
             this.Converter_Hex_TextBox.CustomButton.UseSelectable = true;
             this.Converter_Hex_TextBox.CustomButton.Visible = false;
             this.Converter_Hex_TextBox.Lines = new string[0];
-            this.Converter_Hex_TextBox.Location = new System.Drawing.Point(110, 98);
+            this.Converter_Hex_TextBox.Location = new System.Drawing.Point(110, 101);
             this.Converter_Hex_TextBox.MaxLength = 32767;
             this.Converter_Hex_TextBox.Name = "Converter_Hex_TextBox";
             this.Converter_Hex_TextBox.PasswordChar = '\0';
@@ -339,6 +344,7 @@
             this.Converter_Hex_TextBox.ShortcutsEnabled = true;
             this.Converter_Hex_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_Hex_TextBox.TabIndex = 4;
+            this.Converter_Hex_TextBox.TabStop = false;
             this.Converter_Hex_TextBox.UseSelectable = true;
             this.Converter_Hex_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_Hex_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -358,7 +364,7 @@
             this.Converter_FourBytex8p6_TextBox.CustomButton.UseSelectable = true;
             this.Converter_FourBytex8p6_TextBox.CustomButton.Visible = false;
             this.Converter_FourBytex8p6_TextBox.Lines = new string[0];
-            this.Converter_FourBytex8p6_TextBox.Location = new System.Drawing.Point(110, 67);
+            this.Converter_FourBytex8p6_TextBox.Location = new System.Drawing.Point(110, 70);
             this.Converter_FourBytex8p6_TextBox.MaxLength = 32767;
             this.Converter_FourBytex8p6_TextBox.Name = "Converter_FourBytex8p6_TextBox";
             this.Converter_FourBytex8p6_TextBox.PasswordChar = '\0';
@@ -369,6 +375,7 @@
             this.Converter_FourBytex8p6_TextBox.ShortcutsEnabled = true;
             this.Converter_FourBytex8p6_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_FourBytex8p6_TextBox.TabIndex = 3;
+            this.Converter_FourBytex8p6_TextBox.TabStop = false;
             this.Converter_FourBytex8p6_TextBox.UseSelectable = true;
             this.Converter_FourBytex8p6_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_FourBytex8p6_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -388,7 +395,7 @@
             this.Converter_FourBytex8_TextBox.CustomButton.UseSelectable = true;
             this.Converter_FourBytex8_TextBox.CustomButton.Visible = false;
             this.Converter_FourBytex8_TextBox.Lines = new string[0];
-            this.Converter_FourBytex8_TextBox.Location = new System.Drawing.Point(110, 36);
+            this.Converter_FourBytex8_TextBox.Location = new System.Drawing.Point(110, 39);
             this.Converter_FourBytex8_TextBox.MaxLength = 32767;
             this.Converter_FourBytex8_TextBox.Name = "Converter_FourBytex8_TextBox";
             this.Converter_FourBytex8_TextBox.PasswordChar = '\0';
@@ -399,6 +406,7 @@
             this.Converter_FourBytex8_TextBox.ShortcutsEnabled = true;
             this.Converter_FourBytex8_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_FourBytex8_TextBox.TabIndex = 2;
+            this.Converter_FourBytex8_TextBox.TabStop = false;
             this.Converter_FourBytex8_TextBox.UseSelectable = true;
             this.Converter_FourBytex8_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_FourBytex8_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -418,7 +426,7 @@
             this.Converter_FourByte_TextBox.CustomButton.UseSelectable = true;
             this.Converter_FourByte_TextBox.CustomButton.Visible = false;
             this.Converter_FourByte_TextBox.Lines = new string[0];
-            this.Converter_FourByte_TextBox.Location = new System.Drawing.Point(110, 5);
+            this.Converter_FourByte_TextBox.Location = new System.Drawing.Point(110, 8);
             this.Converter_FourByte_TextBox.MaxLength = 32767;
             this.Converter_FourByte_TextBox.Name = "Converter_FourByte_TextBox";
             this.Converter_FourByte_TextBox.PasswordChar = '\0';
@@ -429,6 +437,7 @@
             this.Converter_FourByte_TextBox.ShortcutsEnabled = true;
             this.Converter_FourByte_TextBox.Size = new System.Drawing.Size(136, 25);
             this.Converter_FourByte_TextBox.TabIndex = 1;
+            this.Converter_FourByte_TextBox.TabStop = false;
             this.Converter_FourByte_TextBox.UseSelectable = true;
             this.Converter_FourByte_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.Converter_FourByte_TextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -458,7 +467,7 @@
             this.Controls.Add(this.Converter_FourByte_TextBox);
             this.Name = "ByteConverter_UC";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             ((System.ComponentModel.ISupportInitialize)(this.ProcessList_GridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

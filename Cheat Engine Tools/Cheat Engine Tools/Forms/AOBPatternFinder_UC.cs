@@ -107,5 +107,5 @@ namespace Cheat_Engine_Tools.Forms
 				JakeFromStateFarm = 0;
 			}
 		}
-	}
+    }
 }

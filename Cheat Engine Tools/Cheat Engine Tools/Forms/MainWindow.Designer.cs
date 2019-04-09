@@ -37,11 +37,11 @@
             this.decompilerMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.versionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aOBPatternFinderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.linksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.othersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dLLInjectorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.warCommanderStringDecoderMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.linksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainWindowPanel = new MetroFramework.Controls.MetroPanel();
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).BeginInit();
@@ -59,7 +59,6 @@
             this.MainWindowMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.welcomeMenuItem,
             this.cheatEngineToolsMenuItem,
-            this.linksMenuItem,
             this.othersMenuItem,
             this.helpMenuItem});
             this.MainWindowMenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
@@ -90,37 +89,30 @@
             // convertersMenuItem
             // 
             this.convertersMenuItem.Name = "convertersMenuItem";
-            this.convertersMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.convertersMenuItem.Size = new System.Drawing.Size(175, 22);
             this.convertersMenuItem.Text = "Converters";
             this.convertersMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
             // decompilerMenuItem
             // 
             this.decompilerMenuItem.Name = "decompilerMenuItem";
-            this.decompilerMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.decompilerMenuItem.Size = new System.Drawing.Size(175, 22);
             this.decompilerMenuItem.Text = "Decompiler";
             this.decompilerMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
             // versionMenuItem
             // 
             this.versionMenuItem.Name = "versionMenuItem";
-            this.versionMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.versionMenuItem.Size = new System.Drawing.Size(175, 22);
             this.versionMenuItem.Text = "CE Version";
             this.versionMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
             // aOBPatternFinderToolStripMenuItem
             // 
             this.aOBPatternFinderToolStripMenuItem.Name = "aOBPatternFinderToolStripMenuItem";
-            this.aOBPatternFinderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aOBPatternFinderToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.aOBPatternFinderToolStripMenuItem.Text = "AOB Pattern Finder";
             this.aOBPatternFinderToolStripMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
-            // 
-            // linksMenuItem
-            // 
-            this.linksMenuItem.Name = "linksMenuItem";
-            this.linksMenuItem.Size = new System.Drawing.Size(46, 19);
-            this.linksMenuItem.Text = "Links";
-            this.linksMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
             // othersMenuItem
             // 
@@ -148,10 +140,18 @@
             // helpMenuItem
             // 
             this.helpMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.linksMenuItem,
             this.aboutMenuItem});
             this.helpMenuItem.Name = "helpMenuItem";
             this.helpMenuItem.Size = new System.Drawing.Size(44, 19);
             this.helpMenuItem.Text = "Help";
+            // 
+            // linksMenuItem
+            // 
+            this.linksMenuItem.Name = "linksMenuItem";
+            this.linksMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.linksMenuItem.Text = "Links";
+            this.linksMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
             // aboutMenuItem
             // 
@@ -162,13 +162,14 @@
             // 
             // MainWindowPanel
             // 
-            this.MainWindowPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MainWindowPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainWindowPanel.HorizontalScrollbarBarColor = true;
             this.MainWindowPanel.HorizontalScrollbarHighlightOnWheel = false;
             this.MainWindowPanel.HorizontalScrollbarSize = 10;
             this.MainWindowPanel.Location = new System.Drawing.Point(5, 83);
+            this.MainWindowPanel.Margin = new System.Windows.Forms.Padding(0);
             this.MainWindowPanel.Name = "MainWindowPanel";
-            this.MainWindowPanel.Size = new System.Drawing.Size(650, 314);
+            this.MainWindowPanel.Size = new System.Drawing.Size(650, 315);
             this.MainWindowPanel.TabIndex = 2;
             this.MainWindowPanel.VerticalScrollbarBarColor = true;
             this.MainWindowPanel.VerticalScrollbarHighlightOnWheel = false;
@@ -206,12 +207,12 @@
         private System.Windows.Forms.ToolStripMenuItem convertersMenuItem;
         private System.Windows.Forms.ToolStripMenuItem decompilerMenuItem;
         private System.Windows.Forms.ToolStripMenuItem versionMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem linksMenuItem;
         private System.Windows.Forms.ToolStripMenuItem othersMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dLLInjectorMenuItem;
         private System.Windows.Forms.ToolStripMenuItem warCommanderStringDecoderMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aOBPatternFinderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem linksMenuItem;
     }
 }

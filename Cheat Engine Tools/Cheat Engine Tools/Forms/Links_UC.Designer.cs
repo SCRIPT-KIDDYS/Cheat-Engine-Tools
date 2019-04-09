@@ -56,7 +56,7 @@
             this.Links_metroTabControl.Name = "Links_metroTabControl";
             this.Links_metroTabControl.Padding = new System.Drawing.Point(6, 8);
             this.Links_metroTabControl.SelectedIndex = 0;
-            this.Links_metroTabControl.Size = new System.Drawing.Size(636, 276);
+            this.Links_metroTabControl.Size = new System.Drawing.Size(650, 315);
             this.Links_metroTabControl.TabIndex = 0;
             this.Links_metroTabControl.TabStop = false;
             this.Links_metroTabControl.UseSelectable = true;
@@ -68,7 +68,7 @@
             this.ForceProjectX_Tab.Controls.Add(this.ForceProjectXYoutube_metroLink);
             this.ForceProjectX_Tab.Location = new System.Drawing.Point(4, 38);
             this.ForceProjectX_Tab.Name = "ForceProjectX_Tab";
-            this.ForceProjectX_Tab.Size = new System.Drawing.Size(628, 234);
+            this.ForceProjectX_Tab.Size = new System.Drawing.Size(642, 273);
             this.ForceProjectX_Tab.TabIndex = 2;
             this.ForceProjectX_Tab.Text = "ForceProjectX";
             this.ForceProjectX_Tab.UseVisualStyleBackColor = true;
@@ -80,6 +80,7 @@
             this.ForceProjectXGitHub_metroLink.Name = "ForceProjectXGitHub_metroLink";
             this.ForceProjectXGitHub_metroLink.Size = new System.Drawing.Size(608, 41);
             this.ForceProjectXGitHub_metroLink.TabIndex = 2;
+            this.ForceProjectXGitHub_metroLink.TabStop = false;
             this.ForceProjectXGitHub_metroLink.Text = "GitHub";
             this.ForceProjectXGitHub_metroLink.UseSelectable = true;
             this.ForceProjectXGitHub_metroLink.UseVisualStyleBackColor = true;
@@ -92,6 +93,7 @@
             this.ForceProjectXTwitch_metroLink.Name = "ForceProjectXTwitch_metroLink";
             this.ForceProjectXTwitch_metroLink.Size = new System.Drawing.Size(608, 41);
             this.ForceProjectXTwitch_metroLink.TabIndex = 1;
+            this.ForceProjectXTwitch_metroLink.TabStop = false;
             this.ForceProjectXTwitch_metroLink.Text = "Twitch";
             this.ForceProjectXTwitch_metroLink.UseSelectable = true;
             this.ForceProjectXTwitch_metroLink.UseVisualStyleBackColor = true;
@@ -104,6 +106,7 @@
             this.ForceProjectXYoutube_metroLink.Name = "ForceProjectXYoutube_metroLink";
             this.ForceProjectXYoutube_metroLink.Size = new System.Drawing.Size(608, 41);
             this.ForceProjectXYoutube_metroLink.TabIndex = 0;
+            this.ForceProjectXYoutube_metroLink.TabStop = false;
             this.ForceProjectXYoutube_metroLink.Text = "Youtube";
             this.ForceProjectXYoutube_metroLink.UseSelectable = true;
             this.ForceProjectXYoutube_metroLink.UseVisualStyleBackColor = true;
@@ -118,7 +121,7 @@
             this.CheatTheGame_Tab.Location = new System.Drawing.Point(4, 38);
             this.CheatTheGame_Tab.Name = "CheatTheGame_Tab";
             this.CheatTheGame_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.CheatTheGame_Tab.Size = new System.Drawing.Size(628, 234);
+            this.CheatTheGame_Tab.Size = new System.Drawing.Size(642, 273);
             this.CheatTheGame_Tab.TabIndex = 1;
             this.CheatTheGame_Tab.Text = "Cheat The Game";
             this.CheatTheGame_Tab.UseVisualStyleBackColor = true;
@@ -130,6 +133,7 @@
             this.CTGFacebook_metroLink.Name = "CTGFacebook_metroLink";
             this.CTGFacebook_metroLink.Size = new System.Drawing.Size(608, 41);
             this.CTGFacebook_metroLink.TabIndex = 4;
+            this.CTGFacebook_metroLink.TabStop = false;
             this.CTGFacebook_metroLink.Text = "Facebook";
             this.CTGFacebook_metroLink.UseSelectable = true;
             this.CTGFacebook_metroLink.UseVisualStyleBackColor = true;
@@ -142,6 +146,7 @@
             this.CTGDiscord_metroLink.Name = "CTGDiscord_metroLink";
             this.CTGDiscord_metroLink.Size = new System.Drawing.Size(608, 41);
             this.CTGDiscord_metroLink.TabIndex = 3;
+            this.CTGDiscord_metroLink.TabStop = false;
             this.CTGDiscord_metroLink.Text = "Discord";
             this.CTGDiscord_metroLink.UseSelectable = true;
             this.CTGDiscord_metroLink.UseVisualStyleBackColor = true;
@@ -154,6 +159,7 @@
             this.CTGYoutube_metroLink.Name = "CTGYoutube_metroLink";
             this.CTGYoutube_metroLink.Size = new System.Drawing.Size(608, 41);
             this.CTGYoutube_metroLink.TabIndex = 2;
+            this.CTGYoutube_metroLink.TabStop = false;
             this.CTGYoutube_metroLink.Text = "Youtube";
             this.CTGYoutube_metroLink.UseSelectable = true;
             this.CTGYoutube_metroLink.UseVisualStyleBackColor = true;
@@ -166,6 +172,7 @@
             this.CTGWebsite_metroLink.Name = "CTGWebsite_metroLink";
             this.CTGWebsite_metroLink.Size = new System.Drawing.Size(608, 41);
             this.CTGWebsite_metroLink.TabIndex = 1;
+            this.CTGWebsite_metroLink.TabStop = false;
             this.CTGWebsite_metroLink.Text = "Website";
             this.CTGWebsite_metroLink.UseSelectable = true;
             this.CTGWebsite_metroLink.UseVisualStyleBackColor = true;
@@ -177,7 +184,7 @@
             this.FearER_Tab.Location = new System.Drawing.Point(4, 38);
             this.FearER_Tab.Name = "FearER_Tab";
             this.FearER_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.FearER_Tab.Size = new System.Drawing.Size(628, 234);
+            this.FearER_Tab.Size = new System.Drawing.Size(642, 273);
             this.FearER_Tab.TabIndex = 0;
             this.FearER_Tab.Text = "FearER";
             this.FearER_Tab.UseVisualStyleBackColor = true;
@@ -189,6 +196,7 @@
             this.FearERGitHub_metroLink.Name = "FearERGitHub_metroLink";
             this.FearERGitHub_metroLink.Size = new System.Drawing.Size(608, 41);
             this.FearERGitHub_metroLink.TabIndex = 3;
+            this.FearERGitHub_metroLink.TabStop = false;
             this.FearERGitHub_metroLink.Text = "GitHub";
             this.FearERGitHub_metroLink.UseSelectable = true;
             this.FearERGitHub_metroLink.UseVisualStyleBackColor = true;
@@ -200,7 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Links_metroTabControl);
             this.Name = "Links_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.Links_metroTabControl.ResumeLayout(false);
             this.ForceProjectX_Tab.ResumeLayout(false);
             this.CheatTheGame_Tab.ResumeLayout(false);

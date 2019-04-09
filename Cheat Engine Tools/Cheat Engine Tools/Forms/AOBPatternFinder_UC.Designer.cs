@@ -49,9 +49,10 @@
             this.Bottom_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bottom_Label.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.Bottom_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.Bottom_Label.Location = new System.Drawing.Point(3, 252);
+            this.Bottom_Label.Location = new System.Drawing.Point(5, 254);
+            this.Bottom_Label.Margin = new System.Windows.Forms.Padding(5);
             this.Bottom_Label.Name = "Bottom_Label";
-            this.Bottom_Label.Size = new System.Drawing.Size(628, 23);
+            this.Bottom_Label.Size = new System.Drawing.Size(639, 23);
             this.Bottom_Label.TabIndex = 4;
             this.Bottom_Label.Text = "*NOTE*   The First TextBox Byte Length Must Be >= To All Others";
             this.Bottom_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,7 +60,7 @@
             // 
             // FormatAOBs_Button
             // 
-            this.FormatAOBs_Button.Location = new System.Drawing.Point(308, 190);
+            this.FormatAOBs_Button.Location = new System.Drawing.Point(330, 190);
             this.FormatAOBs_Button.Name = "FormatAOBs_Button";
             this.FormatAOBs_Button.Size = new System.Drawing.Size(101, 23);
             this.FormatAOBs_Button.TabIndex = 3;
@@ -71,53 +72,48 @@
             // 
             // AOB5Length_Label
             // 
-            this.AOB5Length_Label.AutoSize = true;
-            this.AOB5Length_Label.Location = new System.Drawing.Point(526, 158);
+            this.AOB5Length_Label.Location = new System.Drawing.Point(547, 154);
             this.AOB5Length_Label.Name = "AOB5Length_Label";
-            this.AOB5Length_Label.Size = new System.Drawing.Size(50, 19);
+            this.AOB5Length_Label.Size = new System.Drawing.Size(100, 23);
             this.AOB5Length_Label.TabIndex = 2;
             this.AOB5Length_Label.Text = "0 Bytes";
             // 
             // AOB4Length_Label
             // 
-            this.AOB4Length_Label.AutoSize = true;
-            this.AOB4Length_Label.Location = new System.Drawing.Point(526, 122);
+            this.AOB4Length_Label.Location = new System.Drawing.Point(547, 118);
             this.AOB4Length_Label.Name = "AOB4Length_Label";
-            this.AOB4Length_Label.Size = new System.Drawing.Size(50, 19);
+            this.AOB4Length_Label.Size = new System.Drawing.Size(100, 23);
             this.AOB4Length_Label.TabIndex = 2;
             this.AOB4Length_Label.Text = "0 Bytes";
             // 
             // AOB3Length_Label
             // 
-            this.AOB3Length_Label.AutoSize = true;
-            this.AOB3Length_Label.Location = new System.Drawing.Point(526, 86);
+            this.AOB3Length_Label.Location = new System.Drawing.Point(547, 82);
             this.AOB3Length_Label.Name = "AOB3Length_Label";
-            this.AOB3Length_Label.Size = new System.Drawing.Size(50, 19);
+            this.AOB3Length_Label.Size = new System.Drawing.Size(100, 23);
             this.AOB3Length_Label.TabIndex = 2;
             this.AOB3Length_Label.Text = "0 Bytes";
             // 
             // AOB2Length_Label
             // 
-            this.AOB2Length_Label.AutoSize = true;
-            this.AOB2Length_Label.Location = new System.Drawing.Point(526, 50);
+            this.AOB2Length_Label.Location = new System.Drawing.Point(547, 46);
             this.AOB2Length_Label.Name = "AOB2Length_Label";
-            this.AOB2Length_Label.Size = new System.Drawing.Size(50, 19);
+            this.AOB2Length_Label.Size = new System.Drawing.Size(100, 23);
             this.AOB2Length_Label.TabIndex = 2;
             this.AOB2Length_Label.Text = "0 Bytes";
             // 
             // AOB1Length_Label
             // 
-            this.AOB1Length_Label.AutoSize = true;
-            this.AOB1Length_Label.Location = new System.Drawing.Point(526, 14);
+            this.AOB1Length_Label.Location = new System.Drawing.Point(547, 10);
             this.AOB1Length_Label.Name = "AOB1Length_Label";
-            this.AOB1Length_Label.Size = new System.Drawing.Size(50, 19);
+            this.AOB1Length_Label.Size = new System.Drawing.Size(100, 23);
             this.AOB1Length_Label.TabIndex = 2;
             this.AOB1Length_Label.Text = "0 Bytes";
             // 
             // Compare_Button
             // 
             this.Compare_Button.Enabled = false;
-            this.Compare_Button.Location = new System.Drawing.Point(417, 190);
+            this.Compare_Button.Location = new System.Drawing.Point(439, 190);
             this.Compare_Button.Margin = new System.Windows.Forms.Padding(5, 10, 5, 3);
             this.Compare_Button.Name = "Compare_Button";
             this.Compare_Button.Size = new System.Drawing.Size(101, 23);
@@ -134,7 +130,7 @@
             // 
             // 
             this.AOBResults_TextBox.CustomButton.Image = null;
-            this.AOBResults_TextBox.CustomButton.Location = new System.Drawing.Point(604, 1);
+            this.AOBResults_TextBox.CustomButton.Location = new System.Drawing.Point(618, 1);
             this.AOBResults_TextBox.CustomButton.Name = "";
             this.AOBResults_TextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.AOBResults_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -143,8 +139,8 @@
             this.AOBResults_TextBox.CustomButton.UseSelectable = true;
             this.AOBResults_TextBox.CustomButton.Visible = false;
             this.AOBResults_TextBox.Lines = new string[0];
-            this.AOBResults_TextBox.Location = new System.Drawing.Point(5, 226);
-            this.AOBResults_TextBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 3);
+            this.AOBResults_TextBox.Location = new System.Drawing.Point(5, 221);
+            this.AOBResults_TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.AOBResults_TextBox.MaxLength = 32767;
             this.AOBResults_TextBox.Name = "AOBResults_TextBox";
             this.AOBResults_TextBox.PasswordChar = '\0';
@@ -153,7 +149,7 @@
             this.AOBResults_TextBox.SelectionLength = 0;
             this.AOBResults_TextBox.SelectionStart = 0;
             this.AOBResults_TextBox.ShortcutsEnabled = true;
-            this.AOBResults_TextBox.Size = new System.Drawing.Size(626, 23);
+            this.AOBResults_TextBox.Size = new System.Drawing.Size(640, 23);
             this.AOBResults_TextBox.TabIndex = 0;
             this.AOBResults_TextBox.TabStop = false;
             this.AOBResults_TextBox.UseSelectable = true;
@@ -166,7 +162,7 @@
             // 
             // 
             this.AOB5_TextBox.CustomButton.Image = null;
-            this.AOB5_TextBox.CustomButton.Location = new System.Drawing.Point(491, 1);
+            this.AOB5_TextBox.CustomButton.Location = new System.Drawing.Point(512, 1);
             this.AOB5_TextBox.CustomButton.Name = "";
             this.AOB5_TextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.AOB5_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -185,7 +181,7 @@
             this.AOB5_TextBox.SelectionLength = 0;
             this.AOB5_TextBox.SelectionStart = 0;
             this.AOB5_TextBox.ShortcutsEnabled = true;
-            this.AOB5_TextBox.Size = new System.Drawing.Size(513, 23);
+            this.AOB5_TextBox.Size = new System.Drawing.Size(534, 23);
             this.AOB5_TextBox.TabIndex = 4;
             this.AOB5_TextBox.TabStop = false;
             this.AOB5_TextBox.UseSelectable = true;
@@ -198,7 +194,7 @@
             // 
             // 
             this.AOB4_TextBox.CustomButton.Image = null;
-            this.AOB4_TextBox.CustomButton.Location = new System.Drawing.Point(491, 1);
+            this.AOB4_TextBox.CustomButton.Location = new System.Drawing.Point(512, 1);
             this.AOB4_TextBox.CustomButton.Name = "";
             this.AOB4_TextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.AOB4_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -217,7 +213,7 @@
             this.AOB4_TextBox.SelectionLength = 0;
             this.AOB4_TextBox.SelectionStart = 0;
             this.AOB4_TextBox.ShortcutsEnabled = true;
-            this.AOB4_TextBox.Size = new System.Drawing.Size(513, 23);
+            this.AOB4_TextBox.Size = new System.Drawing.Size(534, 23);
             this.AOB4_TextBox.TabIndex = 3;
             this.AOB4_TextBox.TabStop = false;
             this.AOB4_TextBox.UseSelectable = true;
@@ -230,7 +226,7 @@
             // 
             // 
             this.AOB3_TextBox.CustomButton.Image = null;
-            this.AOB3_TextBox.CustomButton.Location = new System.Drawing.Point(491, 1);
+            this.AOB3_TextBox.CustomButton.Location = new System.Drawing.Point(512, 1);
             this.AOB3_TextBox.CustomButton.Name = "";
             this.AOB3_TextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.AOB3_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -249,7 +245,7 @@
             this.AOB3_TextBox.SelectionLength = 0;
             this.AOB3_TextBox.SelectionStart = 0;
             this.AOB3_TextBox.ShortcutsEnabled = true;
-            this.AOB3_TextBox.Size = new System.Drawing.Size(513, 23);
+            this.AOB3_TextBox.Size = new System.Drawing.Size(534, 23);
             this.AOB3_TextBox.TabIndex = 2;
             this.AOB3_TextBox.TabStop = false;
             this.AOB3_TextBox.UseSelectable = true;
@@ -262,7 +258,7 @@
             // 
             // 
             this.AOB2_TextBox.CustomButton.Image = null;
-            this.AOB2_TextBox.CustomButton.Location = new System.Drawing.Point(491, 1);
+            this.AOB2_TextBox.CustomButton.Location = new System.Drawing.Point(512, 1);
             this.AOB2_TextBox.CustomButton.Name = "";
             this.AOB2_TextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.AOB2_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -271,7 +267,7 @@
             this.AOB2_TextBox.CustomButton.UseSelectable = true;
             this.AOB2_TextBox.CustomButton.Visible = false;
             this.AOB2_TextBox.Lines = new string[0];
-            this.AOB2_TextBox.Location = new System.Drawing.Point(5, 46);
+            this.AOB2_TextBox.Location = new System.Drawing.Point(6, 46);
             this.AOB2_TextBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 3);
             this.AOB2_TextBox.MaxLength = 32767;
             this.AOB2_TextBox.Name = "AOB2_TextBox";
@@ -281,7 +277,7 @@
             this.AOB2_TextBox.SelectionLength = 0;
             this.AOB2_TextBox.SelectionStart = 0;
             this.AOB2_TextBox.ShortcutsEnabled = true;
-            this.AOB2_TextBox.Size = new System.Drawing.Size(513, 23);
+            this.AOB2_TextBox.Size = new System.Drawing.Size(534, 23);
             this.AOB2_TextBox.TabIndex = 1;
             this.AOB2_TextBox.TabStop = false;
             this.AOB2_TextBox.UseSelectable = true;
@@ -294,7 +290,7 @@
             // 
             // 
             this.AOB1_TextBox.CustomButton.Image = null;
-            this.AOB1_TextBox.CustomButton.Location = new System.Drawing.Point(491, 1);
+            this.AOB1_TextBox.CustomButton.Location = new System.Drawing.Point(511, 1);
             this.AOB1_TextBox.CustomButton.Name = "";
             this.AOB1_TextBox.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.AOB1_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -303,7 +299,7 @@
             this.AOB1_TextBox.CustomButton.UseSelectable = true;
             this.AOB1_TextBox.CustomButton.Visible = false;
             this.AOB1_TextBox.Lines = new string[0];
-            this.AOB1_TextBox.Location = new System.Drawing.Point(5, 10);
+            this.AOB1_TextBox.Location = new System.Drawing.Point(6, 10);
             this.AOB1_TextBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 3);
             this.AOB1_TextBox.MaxLength = 32767;
             this.AOB1_TextBox.Name = "AOB1_TextBox";
@@ -313,7 +309,7 @@
             this.AOB1_TextBox.SelectionLength = 0;
             this.AOB1_TextBox.SelectionStart = 0;
             this.AOB1_TextBox.ShortcutsEnabled = true;
-            this.AOB1_TextBox.Size = new System.Drawing.Size(513, 23);
+            this.AOB1_TextBox.Size = new System.Drawing.Size(533, 23);
             this.AOB1_TextBox.TabIndex = 0;
             this.AOB1_TextBox.TabStop = false;
             this.AOB1_TextBox.UseSelectable = true;
@@ -339,9 +335,8 @@
             this.Controls.Add(this.AOB2_TextBox);
             this.Controls.Add(this.AOB1_TextBox);
             this.Name = "AOBPatternFinder_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
 		}
 

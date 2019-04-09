@@ -38,10 +38,10 @@
             this.DragAndDrop_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DragAndDrop_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.DragAndDrop_Label.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.DragAndDrop_Label.Location = new System.Drawing.Point(0, 240);
+            this.DragAndDrop_Label.Location = new System.Drawing.Point(0, 279);
             this.DragAndDrop_Label.Margin = new System.Windows.Forms.Padding(10);
             this.DragAndDrop_Label.Name = "DragAndDrop_Label";
-            this.DragAndDrop_Label.Size = new System.Drawing.Size(636, 36);
+            this.DragAndDrop_Label.Size = new System.Drawing.Size(650, 36);
             this.DragAndDrop_Label.TabIndex = 0;
             this.DragAndDrop_Label.Text = "Drag and Drop .cetrainer file(s) here.";
             this.DragAndDrop_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -54,7 +54,7 @@
             this.NewEncryption_Label.Location = new System.Drawing.Point(0, 0);
             this.NewEncryption_Label.Margin = new System.Windows.Forms.Padding(10);
             this.NewEncryption_Label.Name = "NewEncryption_Label";
-            this.NewEncryption_Label.Size = new System.Drawing.Size(636, 36);
+            this.NewEncryption_Label.Size = new System.Drawing.Size(650, 36);
             this.NewEncryption_Label.TabIndex = 1;
             this.NewEncryption_Label.Text = "NOTE: Will not work on new encodeFunction()...... yet";
             this.NewEncryption_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@
             this.Controls.Add(this.DragAndDrop_Label);
             this.DoubleBuffered = true;
             this.Name = "CEDecompiler_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.CEDecompiler_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.CEDecompiler_DragEnter);
             this.ResumeLayout(false);

@@ -56,9 +56,12 @@
             // 
             // Decode_ProgressBar
             // 
-            this.Decode_ProgressBar.Location = new System.Drawing.Point(13, 257);
+            this.Decode_ProgressBar.FontSize = MetroFramework.MetroProgressBarSize.Small;
+            this.Decode_ProgressBar.HideProgressText = false;
+            this.Decode_ProgressBar.Location = new System.Drawing.Point(8, 269);
+            this.Decode_ProgressBar.Margin = new System.Windows.Forms.Padding(5);
             this.Decode_ProgressBar.Name = "Decode_ProgressBar";
-            this.Decode_ProgressBar.Size = new System.Drawing.Size(613, 15);
+            this.Decode_ProgressBar.Size = new System.Drawing.Size(620, 41);
             this.Decode_ProgressBar.Step = 1;
             this.Decode_ProgressBar.TabIndex = 5;
             // 
@@ -68,17 +71,17 @@
             // 
             // 
             this.Log_TextBox.CustomButton.Image = null;
-            this.Log_TextBox.CustomButton.Location = new System.Drawing.Point(402, 2);
+            this.Log_TextBox.CustomButton.Location = new System.Drawing.Point(362, 1);
             this.Log_TextBox.CustomButton.Name = "";
-            this.Log_TextBox.CustomButton.Size = new System.Drawing.Size(91, 91);
+            this.Log_TextBox.CustomButton.Size = new System.Drawing.Size(147, 147);
             this.Log_TextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.Log_TextBox.CustomButton.TabIndex = 1;
             this.Log_TextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.Log_TextBox.CustomButton.UseSelectable = true;
             this.Log_TextBox.CustomButton.Visible = false;
             this.Log_TextBox.Lines = new string[0];
-            this.Log_TextBox.Location = new System.Drawing.Point(13, 148);
-            this.Log_TextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.Log_TextBox.Location = new System.Drawing.Point(8, 110);
+            this.Log_TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.Log_TextBox.MaxLength = 32767;
             this.Log_TextBox.Multiline = true;
             this.Log_TextBox.Name = "Log_TextBox";
@@ -89,8 +92,9 @@
             this.Log_TextBox.SelectionLength = 0;
             this.Log_TextBox.SelectionStart = 0;
             this.Log_TextBox.ShortcutsEnabled = true;
-            this.Log_TextBox.Size = new System.Drawing.Size(496, 96);
+            this.Log_TextBox.Size = new System.Drawing.Size(510, 149);
             this.Log_TextBox.TabIndex = 4;
+            this.Log_TextBox.TabStop = false;
             this.Log_TextBox.UseSelectable = true;
             this.Log_TextBox.WaterMark = "OUTPUT:";
             this.Log_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -112,8 +116,8 @@
             this.WrapperRight_TextBox.CustomButton.Visible = false;
             this.WrapperRight_TextBox.Lines = new string[] {
         "  ]]=="};
-            this.WrapperRight_TextBox.Location = new System.Drawing.Point(529, 103);
-            this.WrapperRight_TextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.WrapperRight_TextBox.Location = new System.Drawing.Point(531, 75);
+            this.WrapperRight_TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.WrapperRight_TextBox.MaxLength = 32767;
             this.WrapperRight_TextBox.Name = "WrapperRight_TextBox";
             this.WrapperRight_TextBox.PasswordChar = '\0';
@@ -124,6 +128,7 @@
             this.WrapperRight_TextBox.ShortcutsEnabled = true;
             this.WrapperRight_TextBox.Size = new System.Drawing.Size(97, 25);
             this.WrapperRight_TextBox.TabIndex = 3;
+            this.WrapperRight_TextBox.TabStop = false;
             this.WrapperRight_TextBox.Text = "  ]]==";
             this.WrapperRight_TextBox.UseSelectable = true;
             this.WrapperRight_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -145,8 +150,8 @@
             this.WrapperLeft_TextBox.CustomButton.Visible = false;
             this.WrapperLeft_TextBox.Lines = new string[] {
         "==[[  "};
-            this.WrapperLeft_TextBox.Location = new System.Drawing.Point(10, 103);
-            this.WrapperLeft_TextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.WrapperLeft_TextBox.Location = new System.Drawing.Point(8, 75);
+            this.WrapperLeft_TextBox.Margin = new System.Windows.Forms.Padding(5);
             this.WrapperLeft_TextBox.MaxLength = 32767;
             this.WrapperLeft_TextBox.Name = "WrapperLeft_TextBox";
             this.WrapperLeft_TextBox.PasswordChar = '\0';
@@ -157,6 +162,7 @@
             this.WrapperLeft_TextBox.ShortcutsEnabled = true;
             this.WrapperLeft_TextBox.Size = new System.Drawing.Size(97, 25);
             this.WrapperLeft_TextBox.TabIndex = 3;
+            this.WrapperLeft_TextBox.TabStop = false;
             this.WrapperLeft_TextBox.Text = "==[[  ";
             this.WrapperLeft_TextBox.UseSelectable = true;
             this.WrapperLeft_TextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -164,41 +170,42 @@
             // 
             // Wrapper_Label
             // 
-            this.Wrapper_Label.Location = new System.Drawing.Point(127, 103);
-            this.Wrapper_Label.Margin = new System.Windows.Forms.Padding(10);
+            this.Wrapper_Label.Location = new System.Drawing.Point(115, 75);
+            this.Wrapper_Label.Margin = new System.Windows.Forms.Padding(5);
             this.Wrapper_Label.Name = "Wrapper_Label";
-            this.Wrapper_Label.Size = new System.Drawing.Size(382, 25);
+            this.Wrapper_Label.Size = new System.Drawing.Size(403, 25);
             this.Wrapper_Label.TabIndex = 2;
             this.Wrapper_Label.Text = "<- Wrapper to show difference in decoded script ->";
             this.Wrapper_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ScriptsFolder_Label
             // 
-            this.ScriptsFolder_Label.Location = new System.Drawing.Point(10, 58);
-            this.ScriptsFolder_Label.Margin = new System.Windows.Forms.Padding(10);
+            this.ScriptsFolder_Label.Location = new System.Drawing.Point(5, 40);
+            this.ScriptsFolder_Label.Margin = new System.Windows.Forms.Padding(5);
             this.ScriptsFolder_Label.Name = "ScriptsFolder_Label";
-            this.ScriptsFolder_Label.Size = new System.Drawing.Size(499, 25);
+            this.ScriptsFolder_Label.Size = new System.Drawing.Size(513, 25);
             this.ScriptsFolder_Label.TabIndex = 2;
             this.ScriptsFolder_Label.Text = "Select Scripts Folder";
             this.ScriptsFolder_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BinFolder_Label
             // 
-            this.BinFolder_Label.Location = new System.Drawing.Point(10, 13);
-            this.BinFolder_Label.Margin = new System.Windows.Forms.Padding(10);
+            this.BinFolder_Label.Location = new System.Drawing.Point(5, 5);
+            this.BinFolder_Label.Margin = new System.Windows.Forms.Padding(5);
             this.BinFolder_Label.Name = "BinFolder_Label";
-            this.BinFolder_Label.Size = new System.Drawing.Size(499, 25);
+            this.BinFolder_Label.Size = new System.Drawing.Size(513, 25);
             this.BinFolder_Label.TabIndex = 2;
             this.BinFolder_Label.Text = "Select Bin Folder";
             this.BinFolder_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ClearLog_Button
             // 
-            this.ClearLog_Button.Location = new System.Drawing.Point(529, 148);
-            this.ClearLog_Button.Margin = new System.Windows.Forms.Padding(10);
+            this.ClearLog_Button.Location = new System.Drawing.Point(531, 110);
+            this.ClearLog_Button.Margin = new System.Windows.Forms.Padding(5);
             this.ClearLog_Button.Name = "ClearLog_Button";
             this.ClearLog_Button.Size = new System.Drawing.Size(97, 25);
             this.ClearLog_Button.TabIndex = 1;
+            this.ClearLog_Button.TabStop = false;
             this.ClearLog_Button.Text = "Clear Log";
             this.ClearLog_Button.UseSelectable = true;
             this.ClearLog_Button.UseVisualStyleBackColor = true;
@@ -206,11 +213,12 @@
             // 
             // Start_Button
             // 
-            this.Start_Button.Location = new System.Drawing.Point(529, 193);
-            this.Start_Button.Margin = new System.Windows.Forms.Padding(10);
+            this.Start_Button.Location = new System.Drawing.Point(531, 208);
+            this.Start_Button.Margin = new System.Windows.Forms.Padding(5);
             this.Start_Button.Name = "Start_Button";
             this.Start_Button.Size = new System.Drawing.Size(97, 51);
             this.Start_Button.TabIndex = 1;
+            this.Start_Button.TabStop = false;
             this.Start_Button.Text = "START";
             this.Start_Button.UseSelectable = true;
             this.Start_Button.UseVisualStyleBackColor = true;
@@ -218,11 +226,12 @@
             // 
             // ScriptsFolder_Button
             // 
-            this.ScriptsFolder_Button.Location = new System.Drawing.Point(529, 58);
-            this.ScriptsFolder_Button.Margin = new System.Windows.Forms.Padding(10);
+            this.ScriptsFolder_Button.Location = new System.Drawing.Point(531, 40);
+            this.ScriptsFolder_Button.Margin = new System.Windows.Forms.Padding(5);
             this.ScriptsFolder_Button.Name = "ScriptsFolder_Button";
             this.ScriptsFolder_Button.Size = new System.Drawing.Size(97, 25);
             this.ScriptsFolder_Button.TabIndex = 1;
+            this.ScriptsFolder_Button.TabStop = false;
             this.ScriptsFolder_Button.Text = "Scripts Folder";
             this.ScriptsFolder_Button.UseSelectable = true;
             this.ScriptsFolder_Button.UseVisualStyleBackColor = true;
@@ -230,11 +239,12 @@
             // 
             // BinFolder_Button
             // 
-            this.BinFolder_Button.Location = new System.Drawing.Point(529, 13);
-            this.BinFolder_Button.Margin = new System.Windows.Forms.Padding(10);
+            this.BinFolder_Button.Location = new System.Drawing.Point(531, 5);
+            this.BinFolder_Button.Margin = new System.Windows.Forms.Padding(5);
             this.BinFolder_Button.Name = "BinFolder_Button";
             this.BinFolder_Button.Size = new System.Drawing.Size(97, 25);
             this.BinFolder_Button.TabIndex = 0;
+            this.BinFolder_Button.TabStop = false;
             this.BinFolder_Button.Text = "Bin Folder";
             this.BinFolder_Button.UseSelectable = true;
             this.BinFolder_Button.UseVisualStyleBackColor = true;
@@ -258,7 +268,7 @@
             this.Controls.Add(this.BinFolder_Button);
             this.DoubleBuffered = true;
             this.Name = "WCStringDecode_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.ResumeLayout(false);
 
         }

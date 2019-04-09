@@ -1,4 +1,10 @@
-﻿Fix AOBPatternFinder to not worry about length.
-Add New CEDecompiler.
-Test DLL Injection.
-Did "Free Hacks" get updated?
+﻿
+<--------  MAIN PROGRAM FEATURES  -------->
+
+1. Add New CEDecompiler. (Delayed do to work, NO ETA)
+
+
+
+<--------  BUGS / ISSUES  -------->
+
+1. Fix AOBPatternFinder to not worry about length.

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.SuspendLayout();
             // 
             // BLANK_UC
             // 
@@ -36,7 +37,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DoubleBuffered = true;
             this.Name = "BLANK_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.ResumeLayout(false);
 
         }

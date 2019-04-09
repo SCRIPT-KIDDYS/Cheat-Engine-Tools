@@ -16,7 +16,7 @@ namespace Cheat_Engine_Tools.Forms
 
         private static List<string[]> binHolder = new List<string[]>();
 
-        public static List<string[]> filePath = new List<string[]>();
+        private static List<string[]> filePath = new List<string[]>();
 
         private static string ScriptFolderPath;
 
@@ -32,7 +32,6 @@ namespace Cheat_Engine_Tools.Forms
 
         private void Log(string message, MessageType messageType = MessageType.INFO)
         {
-            ShakeMe();
             if (Log_TextBox.InvokeRequired)
             { Log_TextBox.Invoke(new MethodInvoker(delegate { Log_TextBox.Text += $"[{messageType}] {message} {Environment.NewLine}"; })); }
             else
@@ -57,8 +56,11 @@ namespace Cheat_Engine_Tools.Forms
         {
             if (!BinErrorCheck() && !ScriptsErrorCheck())
             {
+                Decode_ProgressBar.Value = 0;
                 Decode_ProgressBar.Maximum = filePath[0].Length;
-                Start_Button.Enabled = false;
+                WCDecodeProgressBar_timer.Enabled = true;
+                WCDecodeProgressBar_timer.Start();
+                Log_TextBox.Text = "";
                 Thread Decode_Thread = new Thread(new ThreadStart(DecodeStrings));
                 Decode_Thread.Start();
             }
@@ -119,7 +121,6 @@ namespace Cheat_Engine_Tools.Forms
             int fileCount = 0;
             foreach (string[] path in filePath)
             {
-                WCDecodeProgressBar_timer.Start();
                 for (int i = 0; i < path.Length; i++)
                 {
                     ProgressBarCount = i;
@@ -145,7 +146,8 @@ namespace Cheat_Engine_Tools.Forms
             WCDecodeProgressBar_timer.Stop();
             stopwatch.Stop();
             Log($"{fileCount} - Files Decoded in '{stopwatch.Elapsed.Seconds}'seconds");
-            Start_Button.Enabled = true;
+            ShakeMe("Finsihed", MessageType.INFO, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Decode_ProgressBar.Invoke(new MethodInvoker(delegate { Decode_ProgressBar.Value = 0; }));
         }
     }
 }

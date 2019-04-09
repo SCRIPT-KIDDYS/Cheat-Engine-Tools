@@ -6,17 +6,22 @@ namespace Cheat_Engine_Tools
 {
     public partial class MainWindow : MetroForm
     {
-        public static Welcome_UC Welcome = new Welcome_UC();
-        public static AOBPatternFinder_UC AOBPatternFinder = new AOBPatternFinder_UC();
-        public static ByteConverter_UC ByteConverter = new ByteConverter_UC();
-        public static CEDecompiler_UC CEDecompiler = new CEDecompiler_UC();
-        public static CEVersion_UC CEVersion = new CEVersion_UC();
-        public static DLLInjector_UC DLLInjector = new DLLInjector_UC();
-        public static Links_UC Links = new Links_UC();
-        public static ComingSoon_UC ComingSoon = new ComingSoon_UC();
-        public static WCStringDecode_UC WCStringDecode = new WCStringDecode_UC();
+        private static Welcome_UC Welcome = new Welcome_UC();
+        private static AOBPatternFinder_UC AOBPatternFinder = new AOBPatternFinder_UC();
+        private static ByteConverter_UC ByteConverter = new ByteConverter_UC();
+        private static CEDecompiler_UC CEDecompiler = new CEDecompiler_UC();
+        private static CEVersion_UC CEVersion = new CEVersion_UC();
+        private static DLLInjector_UC DLLInjector = new DLLInjector_UC();
+        private static Links_UC Links = new Links_UC();
+        private static ComingSoon_UC ComingSoon = new ComingSoon_UC();
+        private static WCStringDecode_UC WCStringDecode = new WCStringDecode_UC();
+        private static About_UC About = new About_UC();
 
-        public MainWindow() => InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+            MainWindowPanel.Controls.Add(Welcome);
+        }
 
         private void MenuItem_Click(object sender, EventArgs e)
         {
@@ -48,7 +53,7 @@ namespace Cheat_Engine_Tools
                     MainWindowPanel.Controls.Add(WCStringDecode);
                     break;
                 case "About":
-                    MainWindowPanel.Controls.Add(ComingSoon);
+                    MainWindowPanel.Controls.Add(About);
                     break;
                 default:
                     MainWindowPanel.Controls.Add(ComingSoon);

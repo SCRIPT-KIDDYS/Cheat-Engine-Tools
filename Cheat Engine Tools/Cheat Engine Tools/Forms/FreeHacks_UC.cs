@@ -3,8 +3,6 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Xml;
-using System.Threading;
-using System.IO;
 
 namespace Cheat_Engine_Tools.Forms
 {

@@ -23,7 +23,7 @@ class WarCommanderDecodeStrings
 
         private uint Method_9() => const_1;
 
-        public void Method_7(BigEndianReader param1)
+        private void Method_7(BigEndianReader param1)
         {
             var loc2 = 0;
             var loc3 = 0;
@@ -60,9 +60,9 @@ class WarCommanderDecodeStrings
             return var_1[loc1 + var_1[var_2] & 255];
         }
 
-        public uint Method_11() => 1;
+        private uint Method_11() => 1;
 
-        public void Method_4(byte[] param1)
+        private void Method_4(byte[] param1)
         {
             uint loc2 = 0;
             while (loc2 < param1.Length)
@@ -164,7 +164,7 @@ class WarCommanderDecodeStrings
             return b[7] + (b[6] << 8) + (b[5] << 16) + (b[4] << 24) + (b[3] << 32) + (b[2] << 40) + (b[1] << 48) + (b[0] << 56);
         }
 
-        public bool ReadInt32AsBool()
+        private bool ReadInt32AsBool()
         {
             byte[] b = ReadBytes(4);
             if (b[0] == 0 || b[1] == 0 || b[2] == 0 || b[3] == 0)
@@ -173,13 +173,13 @@ class WarCommanderDecodeStrings
             { return true; }
         }
 
-        public string ReadString32BitPrefix()
+        private string ReadString32BitPrefix()
         {
             int length = ReadInt32();
             return Encoding.ASCII.GetString(ReadBytes(length));
         }
 
-        public float ReadFloat() => (float)ReadDouble();
+        private float ReadFloat() => (float)ReadDouble();
 
     }
 

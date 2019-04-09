@@ -40,7 +40,7 @@
             this.FreeHacks_Codes_TextBox.Location = new System.Drawing.Point(5, 45);
             this.FreeHacks_Codes_TextBox.Name = "FreeHacks_Codes_TextBox";
             this.FreeHacks_Codes_TextBox.ReadOnly = true;
-            this.FreeHacks_Codes_TextBox.Size = new System.Drawing.Size(626, 189);
+            this.FreeHacks_Codes_TextBox.Size = new System.Drawing.Size(635, 224);
             this.FreeHacks_Codes_TextBox.TabIndex = 1;
             this.FreeHacks_Codes_TextBox.TabStop = false;
             this.FreeHacks_Codes_TextBox.Text = "CTMT is OFFLINE. This section will be removed or changed to another server.";
@@ -55,7 +55,7 @@
             this.FreeHacks_Games_ComboBox.Location = new System.Drawing.Point(5, 10);
             this.FreeHacks_Games_ComboBox.Margin = new System.Windows.Forms.Padding(5, 10, 5, 3);
             this.FreeHacks_Games_ComboBox.Name = "FreeHacks_Games_ComboBox";
-            this.FreeHacks_Games_ComboBox.Size = new System.Drawing.Size(626, 29);
+            this.FreeHacks_Games_ComboBox.Size = new System.Drawing.Size(635, 29);
             this.FreeHacks_Games_ComboBox.TabIndex = 0;
             this.FreeHacks_Games_ComboBox.TabStop = false;
             this.FreeHacks_Games_ComboBox.UseSelectable = true;
@@ -63,10 +63,10 @@
             // 
             // FreeHacks_BottomText_Label
             // 
-            this.FreeHacks_BottomText_Label.Location = new System.Drawing.Point(5, 247);
+            this.FreeHacks_BottomText_Label.Location = new System.Drawing.Point(10, 282);
             this.FreeHacks_BottomText_Label.Margin = new System.Windows.Forms.Padding(10);
             this.FreeHacks_BottomText_Label.Name = "FreeHacks_BottomText_Label";
-            this.FreeHacks_BottomText_Label.Size = new System.Drawing.Size(626, 23);
+            this.FreeHacks_BottomText_Label.Size = new System.Drawing.Size(630, 23);
             this.FreeHacks_BottomText_Label.TabIndex = 2;
             this.FreeHacks_BottomText_Label.Text = "All codes stolen from CyberTerminators because why not?";
             this.FreeHacks_BottomText_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.FreeHacks_Codes_TextBox);
             this.Controls.Add(this.FreeHacks_Games_ComboBox);
             this.Name = "FreeHacks_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.ResumeLayout(false);
 
         }

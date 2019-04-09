@@ -47,7 +47,7 @@
             this.Right_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Right_Label.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Right_Label.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.Right_Label.Location = new System.Drawing.Point(380, 221);
+            this.Right_Label.Location = new System.Drawing.Point(380, 267);
             this.Right_Label.Name = "Right_Label";
             this.Right_Label.Size = new System.Drawing.Size(105, 39);
             this.Right_Label.TabIndex = 2;
@@ -61,7 +61,7 @@
             this.Left_Label.BackColor = System.Drawing.Color.Transparent;
             this.Left_Label.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.Left_Label.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.Left_Label.Location = new System.Drawing.Point(151, 221);
+            this.Left_Label.Location = new System.Drawing.Point(151, 267);
             this.Left_Label.Name = "Left_Label";
             this.Left_Label.Size = new System.Drawing.Size(113, 39);
             this.Left_Label.TabIndex = 3;
@@ -80,7 +80,7 @@
             this.Controls.Add(this.Left_Label);
             this.DoubleBuffered = true;
             this.Name = "Welcome_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.ResumeLayout(false);
 
         }

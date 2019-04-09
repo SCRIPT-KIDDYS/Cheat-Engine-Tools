@@ -38,7 +38,7 @@
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.Location = new System.Drawing.Point(0, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(636, 276);
+            this.metroLabel1.Size = new System.Drawing.Size(650, 315);
             this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "COMING SOON";
             this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -51,7 +51,7 @@
             this.Controls.Add(this.metroLabel1);
             this.DoubleBuffered = true;
             this.Name = "ComingSoon_UC";
-            this.Size = new System.Drawing.Size(636, 276);
+            this.Size = new System.Drawing.Size(650, 315);
             this.ResumeLayout(false);
 
         }
