@@ -1,50 +1,47 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using MetroFramework;
+using static Helpers;
 
 namespace Cheat_Engine_Tools.Forms
 {
     public partial class DLLInjector_UC : UserControl
     {
 
-        public DLLInjector_UC()
-        {
-            InitializeComponent();
-            GetListOProcesses();
-        }
+        public DLLInjector_UC() => InitializeComponent();
 
         private void GetListOProcesses()
         {
             Process[] MyProcess = Process.GetProcesses();
             Array.Sort(MyProcess, (x, y) => String.Compare(x.ToString(), y.ToString()));
             for (int i = 0; i < MyProcess.Length; i++)
-                ProcessList_metroComboBox.Items.Add(MyProcess[i].ProcessName);
+            { ProcessList_ComboBox.Items.Add(MyProcess[i].ProcessName); }
         }
 
         private void RefreshProcessList_metroButton_Click(object sender, EventArgs e)
         {
-            ProcessList_metroComboBox.Items.Clear();
+            ProcessList_ComboBox.Items.Clear();
             GetListOProcesses();
         }
 
         private void InjectDLL_metroButton_Click(object sender, EventArgs e)
         {
-            if (ProcessList_metroComboBox.SelectedIndex > -1)
+            if (ProcessList_ComboBox.SelectedIndex > -1)
             {
-                string processname = ProcessList_metroComboBox.SelectedItem.ToString();
+                string processname = ProcessList_ComboBox.SelectedItem.ToString();
 
                 OpenFileDialog OpenFile = new OpenFileDialog();
-                if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                if (DLLInjector_openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string dllfile = openFileDialog1.FileName;
+                    string dllfile = DLLInjector_openFileDialog.FileName;
                     DllInjector DLLInjector = new DllInjector();
                     DLLInjector.GetInstance.Inject(processname, dllfile);
                 }
-                else { MetroMessageBox.Show(this, "No DLL Injected", "Canceled",MessageBoxButtons.OK, MessageBoxIcon.Warning, Height / 2); }
+                else
+                { ShakeMe("No DLL Injected", MessageType.ERROR, MessageBoxButtons.OK, MessageBoxIcon.Warning, true); }
             }
             else
-                MetroMessageBox.Show(this, "Select a process", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning, Height / 2);
+            { ShakeMe("Select a process", MessageType.ERROR, MessageBoxButtons.OK, MessageBoxIcon.Warning, true); }
         }
     }
 }

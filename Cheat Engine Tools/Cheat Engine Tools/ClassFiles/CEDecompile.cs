@@ -3,6 +3,7 @@ using System.Text;
 using System.IO;
 using System.IO.Compression;
 using System.Windows.Forms;
+using static Helpers;
 
 internal class CEDecompile
 {
@@ -19,10 +20,10 @@ internal class CEDecompile
         byte ckey = 0xCE;
 
         for (int i = 2; i < size; i++)
-            raw_data[i] = (byte)(raw_data[i] ^ raw_data[i - 2]);
+        { raw_data[i] = (byte)(raw_data[i] ^ raw_data[i - 2]); }
 
         for (int j = size - 2; j >= 0; j--)
-            raw_data[j] = (byte)(raw_data[j] ^ raw_data[j + 1]);
+        { raw_data[j] = (byte)(raw_data[j] ^ raw_data[j + 1]); }
 
         for (int k = 0; k < size; k++)
         {
@@ -40,7 +41,7 @@ internal class CEDecompile
             byte[] out_data = DeCompress(br.ReadBytes((int)ms.Length - 5));
             if (out_data.Length == 0)
             {
-                MessageBox.Show("Failed to decompress!");
+                ShakeMe("Failed to decompress!", MessageType.ERROR, MessageBoxButtons.OK, MessageBoxIcon.Error, true);
                 return false;
             }
             byte[] out_dataFinal = new byte[out_data.Length - 4];
@@ -50,12 +51,10 @@ internal class CEDecompile
         }
         else
         {
-            MessageBox.Show(
-                "Something went wrong. Here could be the reasons" + Environment.NewLine + 
-                "1: Trainer is not encrypted." + Environment.NewLine + 
-                "2: Trainer decryption went wrong" + Environment.NewLine + 
-                "3: Trainer is using the new encryption method.", 
-                "ERROR");
+            ShakeMe("Something went wrong.Here could be the reasons" + Environment.NewLine + 
+                "1: Trainer is not encrypted." + Environment.NewLine +
+                "2: Trainer decryption went wrong" + Environment.NewLine +
+                "3: Trainer is using the new encryption method.", MessageType.ERROR, MessageBoxButtons.OK, MessageBoxIcon.Error, true);
 
             return false;
         }

@@ -2,6 +2,7 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
+using static Helpers;
 
 namespace Cheat_Engine_Tools.Forms
 {
@@ -15,14 +16,14 @@ namespace Cheat_Engine_Tools.Forms
 
         private void OpenCE(object sender, EventArgs e)
 		{
-            if (CEVersion_metroComboBox.SelectedIndex == -1)
-                MessageBox.Show("Select CE from drop down first.");
+            if (CEVersion_ComboBox.SelectedIndex == -1)
+            { ShakeMe("Select CE from drop down first.", MessageType.ERROR, MessageBoxButtons.OK, MessageBoxIcon.Error, true); }
             else
             {
                 if ((sender as Button).Text.Contains("32"))
-                    Process.Start(CEVersion_metroLabel.Text + "cheatengine-i386.exe");
+                { Process.Start(CEVersion_Label.Text + "cheatengine-i386.exe"); }
                 else
-                    Process.Start(CEVersion_metroLabel.Text + "Cheat Engine.exe");
+                { Process.Start(CEVersion_Label.Text + "Cheat Engine.exe"); }
             }
 		}
 
@@ -34,19 +35,19 @@ namespace Cheat_Engine_Tools.Forms
 						if (SubKeyName.Contains("Cheat"))
 						{
 							CEStrings[CEStringsNum] = SubKey.GetValue("DisplayName").ToString();
-							CEVersion_metroComboBox.Items.Add(CEStrings[CEStringsNum]);
+							CEVersion_ComboBox.Items.Add(CEStrings[CEStringsNum]);
 							CEStringsNum++;
 							CEStrings[CEStringsNum] = SubKey.GetValue("InstallLocation").ToString();
 							CEStringsNum++;
 						}
 		}
 
-		private void CEVersion_metroComboBox_SelectedIndexChanged(object sender, EventArgs e)
+		private void CEVersion_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (CEVersion_metroComboBox.SelectedIndex == 0)
-				CEVersion_metroLabel.Text = CEStrings[CEVersion_metroComboBox.SelectedIndex + 1];
-			else
-				CEVersion_metroLabel.Text = CEStrings[CEVersion_metroComboBox.SelectedIndex + 2];
+            if (CEVersion_ComboBox.SelectedIndex == 0)
+            { CEVersion_Label.Text = CEStrings[CEVersion_ComboBox.SelectedIndex + 1]; }
+            else
+            { CEVersion_Label.Text = CEStrings[CEVersion_ComboBox.SelectedIndex + 2]; }
 		}
 	}
 }

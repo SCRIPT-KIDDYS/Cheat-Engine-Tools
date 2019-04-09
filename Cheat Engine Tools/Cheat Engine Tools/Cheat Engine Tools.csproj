@@ -54,11 +54,25 @@
     <Compile Include="ClassFiles\CEDecompile.cs" />
     <Compile Include="ClassFiles\DLL Injector.cs" />
     <Compile Include="ClassFiles\FreeHacksDecrypt.cs" />
+    <Compile Include="ClassFiles\Helpers.cs" />
+    <Compile Include="ClassFiles\WarCommanderDecodeStrings.cs" />
     <Compile Include="Forms\AOBPatternFinder_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\AOBPatternFinder_UC.Designer.cs">
       <DependentUpon>AOBPatternFinder_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\About_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\About_UC.Designer.cs">
+      <DependentUpon>About_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WCStringDecode_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WCStringDecode_UC.Designer.cs">
+      <DependentUpon>WCStringDecode_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ByteConverter_UC.cs">
       <SubType>UserControl</SubType>
@@ -77,6 +91,12 @@
     </Compile>
     <Compile Include="Forms\CEVersion_UC.Designer.cs">
       <DependentUpon>CEVersion_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BLANK_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\BLANK_UC.Designer.cs">
+      <DependentUpon>BLANK_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DLLInjector_UC.cs">
       <SubType>UserControl</SubType>
@@ -101,6 +121,12 @@
     </Compile>
     <Compile Include="Forms\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComingSoon_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ComingSoon_UC.Designer.cs">
+      <DependentUpon>ComingSoon_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Welcome_UC.cs">
       <SubType>UserControl</SubType>
@@ -280,6 +306,12 @@
     <EmbeddedResource Include="Forms\AOBPatternFinder_UC.resx">
       <DependentUpon>AOBPatternFinder_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About_UC.resx">
+      <DependentUpon>About_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WCStringDecode_UC.resx">
+      <DependentUpon>WCStringDecode_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ByteConverter_UC.resx">
       <DependentUpon>ByteConverter_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CEVersion_UC.resx">
       <DependentUpon>CEVersion_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BLANK_UC.resx">
+      <DependentUpon>BLANK_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DLLInjector_UC.resx">
       <DependentUpon>DLLInjector_UC.cs</DependentUpon>
@@ -300,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ComingSoon_UC.resx">
+      <DependentUpon>ComingSoon_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcome_UC.resx">
       <DependentUpon>Welcome_UC.cs</DependentUpon>
@@ -326,7 +364,6 @@
     <None Include="MetroFramework\Font\Resources\Open_Sans.ttf" />
     <None Include="MetroFramework\Font\Resources\Open_Sans_Bold.ttf" />
     <None Include="MetroFramework\Font\Resources\Open_Sans_Light.ttf" />
-    <None Include="MetroFramework\Main\MetroFramework.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

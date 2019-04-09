@@ -46,7 +46,7 @@ internal class DllInjector
         get
         {
             if (_instance == null)
-                _instance = new DllInjector();
+            { _instance = new DllInjector(); }
             return _instance;
         }
     }
@@ -56,7 +56,7 @@ internal class DllInjector
     public DllInjectionResult Inject(string sProcName, string sDllPath)
     {
         if (!File.Exists(sDllPath))
-            return DllInjectionResult.DllNotFound;
+        { return DllInjectionResult.DllNotFound; }
 
         uint _procId = 0;
 
@@ -69,10 +69,10 @@ internal class DllInjector
             }
 
         if (_procId == 0)
-            return DllInjectionResult.GameProcessNotFound;
+        { return DllInjectionResult.GameProcessNotFound; }
 
         if (!BInject(_procId, sDllPath))
-            return DllInjectionResult.InjectionFailed;
+        { return DllInjectionResult.InjectionFailed; }
 
         return DllInjectionResult.Success;
     }
@@ -82,25 +82,25 @@ internal class DllInjector
         IntPtr hndProc = OpenProcess((0x2 | 0x8 | 0x10 | 0x20 | 0x400), 1, pToBeInjected);
 
         if (hndProc == INTPTR_ZERO)
-            return false;
+        { return false; }
 
         IntPtr lpLLAddress = GetProcAddress(GetModuleHandle("kernel32.dll"), "LoadLibraryA");
 
         if (lpLLAddress == INTPTR_ZERO)
-            return false;
+        { return false; }
 
         IntPtr lpAddress = VirtualAllocEx(hndProc, (IntPtr)null, (IntPtr)sDllPath.Length, (0x1000 | 0x2000), 0X40);
 
         if (lpAddress == INTPTR_ZERO)
-            return false;
+        { return false; }
 
         byte[] bytes = Encoding.ASCII.GetBytes(sDllPath);
 
         if (WriteProcessMemory(hndProc, lpAddress, bytes, (uint)bytes.Length, 0) == 0)
-            return false;
+        { return false; }
 
         if (CreateRemoteThread(hndProc, (IntPtr)null, INTPTR_ZERO, lpLLAddress, lpAddress, 0, (IntPtr)null) == INTPTR_ZERO)
-            return false;
+        { return false; }
 
         CloseHandle(hndProc);
         return true;

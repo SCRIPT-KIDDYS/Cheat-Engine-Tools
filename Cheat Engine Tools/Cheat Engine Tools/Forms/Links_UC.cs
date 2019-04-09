@@ -29,35 +29,35 @@ namespace Cheat_Engine_Tools.Forms
             int NameToNumber = 0;
             MetroLink Info = sender as MetroLink;
             if (Info.Name.Contains("Force"))
-                NameToNumber = 1;
+            { NameToNumber = 1; }
             if (Info.Name.Contains("CTG"))
-                NameToNumber = 2;
+            { NameToNumber = 2; }
             if (Info.Name.Contains("Fear"))
-                NameToNumber = 3;
+            { NameToNumber = 3; }
 
             switch (NameToNumber)
             {
                 case 1:
                     if (Info.Text.Contains("Youtube"))
-                        Process.Start(ForceProjectXYoutube);
+                    { Process.Start(ForceProjectXYoutube); }
                     if (Info.Text.Contains("Twitch"))
-                        Process.Start(ForceProjectXTwitch);
+                    { Process.Start(ForceProjectXTwitch); }
                     if (Info.Text.Contains("GitHub"))
-                        Process.Start(ForceProjectXGitHub);
+                    { Process.Start(ForceProjectXGitHub); }
                     break;
                 case 2:
                     if (Info.Text.Contains("Facebook"))
-                        Process.Start(CTGFacebook);
+                    { Process.Start(CTGFacebook); }
                     if (Info.Text.Contains("Website"))
-                        Process.Start(CTGWebsite);
+                    { Process.Start(CTGWebsite); }
                     if (Info.Text.Contains("Discord"))
-                        Process.Start(CTGDiscord);
+                    { Process.Start(CTGDiscord); }
                     if (Info.Text.Contains("Youtube"))
-                        Process.Start(CTGYoutube);
+                    { Process.Start(CTGYoutube); }
                     break;
                 case 3:
                     if (Info.Text.Contains("GitHub"))
-                        Process.Start(FearEXGitHub);
+                    { Process.Start(FearEXGitHub); }
                     break;
             }
         }

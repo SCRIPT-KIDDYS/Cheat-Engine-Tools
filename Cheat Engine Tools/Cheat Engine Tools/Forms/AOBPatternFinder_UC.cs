@@ -17,10 +17,7 @@ namespace Cheat_Engine_Tools.Forms
 
         public AOBPatternFinder_UC() => InitializeComponent();
 
-        private bool OnWhitelist(char c)
-		{
-			return Whitelist.Contains(c);
-		}
+        private bool OnWhitelist(char c) => Whitelist.Contains(c);
 
 		private string ReplaceAt(string Input, int Index, char NewChar)
 		{
@@ -37,9 +34,9 @@ namespace Cheat_Engine_Tools.Forms
 					char originalChar = Convert.ToChar(original.Substring(i, 1));
 					char otherChar = Convert.ToChar(other.Substring(i, 1));
 
-					if (!OnWhitelist(originalChar))
-						if (originalChar != otherChar)
-							original = ReplaceAt(original, i, '?');
+                    if (!OnWhitelist(originalChar))
+                        if (originalChar != otherChar)
+                        { original = ReplaceAt(original, i, '?'); }
 				}
                 // TODO: startIndex error. Can not be larger. Look into later. 
                 catch
@@ -49,22 +46,22 @@ namespace Cheat_Engine_Tools.Forms
 		private void GenerateAOB(object sender, EventArgs e)
 		{
 			AOBs.Clear();
-			AOBs.Add(AOB1_metroTextBox.Text);
-			AOBs.Add(AOB2_metroTextBox.Text);
-			AOBs.Add(AOB3_metroTextBox.Text);
-			AOBs.Add(AOB4_metroTextBox.Text);
-			AOBs.Add(AOB5_metroTextBox.Text);
+			AOBs.Add(AOB1_TextBox.Text);
+			AOBs.Add(AOB2_TextBox.Text);
+			AOBs.Add(AOB3_TextBox.Text);
+			AOBs.Add(AOB4_TextBox.Text);
+			AOBs.Add(AOB5_TextBox.Text);
 
 			string wildcard = AOBs[0];
 
-			foreach (string AOB in AOBs)
-				WildcardString(ref wildcard, AOB);
+            foreach (string AOB in AOBs)
+            { WildcardString(ref wildcard, AOB); }
 
-			AOBResults_metroTextBox.Text = wildcard;
+			AOBResults_TextBox.Text = wildcard;
 			IdiotProof();
 		}
 
-		private void FormatAOBs_metroButton_Click(object sender, EventArgs e)
+		private void FormatAOBs_Button_Click(object sender, EventArgs e)
 		{
 			foreach (Control TextBoxs in this.Controls)
 				if (TextBoxs is MetroTextBox)
@@ -74,11 +71,11 @@ namespace Cheat_Engine_Tools.Forms
 					TextBoxs.Text = AddSpaces.Trim();
 				}
 
-			AOB1Length_metroLabel.Text = (AOB1_metroTextBox.Text.Length - SpaceCount(AOB1_metroTextBox.Text)) / 2 + " bytes";
-			AOB2Length_metroLabel.Text = (AOB2_metroTextBox.Text.Length - SpaceCount(AOB2_metroTextBox.Text)) / 2 + " bytes";
-			AOB3Length_metroLabel.Text = (AOB3_metroTextBox.Text.Length - SpaceCount(AOB3_metroTextBox.Text)) / 2 + " bytes";
-			AOB4Length_metroLabel.Text = (AOB4_metroTextBox.Text.Length - SpaceCount(AOB4_metroTextBox.Text)) / 2 + " bytes";
-			AOB5Length_metroLabel.Text = (AOB5_metroTextBox.Text.Length - SpaceCount(AOB5_metroTextBox.Text)) / 2 + " bytes";
+			AOB1Length_Label.Text = (AOB1_TextBox.Text.Length - SpaceCount(AOB1_TextBox.Text)) / 2 + " bytes";
+			AOB2Length_Label.Text = (AOB2_TextBox.Text.Length - SpaceCount(AOB2_TextBox.Text)) / 2 + " bytes";
+			AOB3Length_Label.Text = (AOB3_TextBox.Text.Length - SpaceCount(AOB3_TextBox.Text)) / 2 + " bytes";
+			AOB4Length_Label.Text = (AOB4_TextBox.Text.Length - SpaceCount(AOB4_TextBox.Text)) / 2 + " bytes";
+			AOB5Length_Label.Text = (AOB5_TextBox.Text.Length - SpaceCount(AOB5_TextBox.Text)) / 2 + " bytes";
 			IdiotProof();
 		}
 
@@ -89,8 +86,8 @@ namespace Cheat_Engine_Tools.Forms
 			for (int i = 0; i < str.Length; i++)
 			{
 				str1 = str.Substring(i, 1);
-				if (str1 == " ")
-					spcctr++;
+                if (str1 == " ")
+                { spcctr++; }
 			}
 			return spcctr;
 		}
@@ -99,16 +96,16 @@ namespace Cheat_Engine_Tools.Forms
 		{
 			if (JakeFromStateFarm == 0)
 			{
-				Compare_metroButton.Enabled = true;
-				FormatAOBs_metroButton.Enabled = false;
+				Compare_Button.Enabled = true;
+				FormatAOBs_Button.Enabled = false;
 				JakeFromStateFarm = 1;
 			}
 			else
 			{
-				Compare_metroButton.Enabled = false;
-				FormatAOBs_metroButton.Enabled = true;
+				Compare_Button.Enabled = false;
+				FormatAOBs_Button.Enabled = true;
 				JakeFromStateFarm = 0;
 			}
 		}
-	}
+    }
 }
