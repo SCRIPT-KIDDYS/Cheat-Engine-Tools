@@ -6,8 +6,6 @@ using System.Windows.Forms;
 
 public class Helpers
 {
-    public static ByteConverter_ Converter = new ByteConverter_();
-
     public enum MessageType { INFO, WARNING, ERROR, CANCELED }
 
     public static string[] ErrorList = { };

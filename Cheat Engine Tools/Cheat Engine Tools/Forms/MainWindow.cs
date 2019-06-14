@@ -16,6 +16,7 @@ namespace Cheat_Engine_Tools
         private static ComingSoon_UC ComingSoon = new ComingSoon_UC();
         private static WCStringDecode_UC WCStringDecode = new WCStringDecode_UC();
         private static About_UC About = new About_UC();
+        private static WCSWFDumper_UC WCSWFDumper = new WCSWFDumper_UC();
 
         public MainWindow()
         {
@@ -51,6 +52,9 @@ namespace Cheat_Engine_Tools
                     break;
                 case "WarCommander String Decoder":
                     MainWindowPanel.Controls.Add(WCStringDecode);
+                    break;
+                case "WarCommander SWF Dumper":
+                    MainWindowPanel.Controls.Add(WCSWFDumper);
                     break;
                 case "About":
                     MainWindowPanel.Controls.Add(About);

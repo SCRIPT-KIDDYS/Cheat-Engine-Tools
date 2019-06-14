@@ -48,5 +48,5 @@ Fluffer_Nutter - Coder, Designer, Alcoholic
 * Cleaned up TabStop items.
 * Cleaned up some code.
 
-### __v0.1__  
+### _v0.1_
 * Github Setup.

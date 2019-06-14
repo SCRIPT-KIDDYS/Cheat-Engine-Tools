@@ -47,7 +47,6 @@
             this.metroTextBox1.CustomButton.UseSelectable = true;
             this.metroTextBox1.CustomButton.Visible = false;
             this.metroTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBox1.Enabled = false;
             this.metroTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.metroTextBox1.Lines = new string[0];
@@ -56,6 +55,7 @@
             this.metroTextBox1.Multiline = true;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
+            this.metroTextBox1.ReadOnly = true;
             this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.metroTextBox1.SelectedText = "";
             this.metroTextBox1.SelectionLength = 0;

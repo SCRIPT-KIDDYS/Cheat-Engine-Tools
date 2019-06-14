@@ -50,11 +50,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassFiles\Browser.cs" />
     <Compile Include="ClassFiles\ByteConverter.cs" />
     <Compile Include="ClassFiles\CEDecompile.cs" />
     <Compile Include="ClassFiles\DLL Injector.cs" />
     <Compile Include="ClassFiles\FreeHacksDecrypt.cs" />
     <Compile Include="ClassFiles\Helpers.cs" />
+    <Compile Include="ClassFiles\memory.dll\Memory.cs" />
+    <Compile Include="ClassFiles\memory.dll\MemoryRegionResult.cs" />
     <Compile Include="ClassFiles\WarCommanderDecodeStrings.cs" />
     <Compile Include="Forms\AOBPatternFinder_UC.cs">
       <SubType>UserControl</SubType>
@@ -67,6 +70,12 @@
     </Compile>
     <Compile Include="Forms\About_UC.Designer.cs">
       <DependentUpon>About_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WCSWFDumper_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\WCSWFDumper_UC.Designer.cs">
+      <DependentUpon>WCSWFDumper_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\WCStringDecode_UC.cs">
       <SubType>UserControl</SubType>
@@ -309,6 +318,9 @@
     <EmbeddedResource Include="Forms\About_UC.resx">
       <DependentUpon>About_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WCSWFDumper_UC.resx">
+      <DependentUpon>WCSWFDumper_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\WCStringDecode_UC.resx">
       <DependentUpon>WCStringDecode_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,6 +390,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ClassFiles\memory.dll\Credit.txt" />
     <Content Include="MetroFramework\Font\Resources\Open Sans License.txt" />
     <Content Include="MetroFramework\Main\Localization\de\MetroToggle.xml" />
     <Content Include="MetroFramework\Main\Localization\en\MetroToggle.xml" />

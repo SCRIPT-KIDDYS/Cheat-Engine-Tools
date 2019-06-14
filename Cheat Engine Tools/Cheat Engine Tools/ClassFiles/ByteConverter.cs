@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 
-public class ByteConverter_ : INotifyPropertyChanged
+public class ByteConverter : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
     private int _4byte;

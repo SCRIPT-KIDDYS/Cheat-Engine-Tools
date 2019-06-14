@@ -11,6 +11,7 @@ namespace Cheat_Engine_Tools.Forms
         public ByteConverter_UC()
         {
             InitializeComponent();
+            ByteConverter Converter = new ByteConverter();
             Converter_FourByte_TextBox.DataBindings.Add("Text", Converter, "FourByte", false, DataSourceUpdateMode.OnPropertyChanged);
             Converter_FourBytex8_TextBox.DataBindings.Add("Text", Converter, "FourByte_x8", false, DataSourceUpdateMode.OnPropertyChanged);
             Converter_FourBytex8p6_TextBox.DataBindings.Add("Text", Converter, "FourByte_x8_p6", false, DataSourceUpdateMode.OnPropertyChanged);

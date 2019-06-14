@@ -18,6 +18,8 @@ namespace Cheat_Engine_Tools.Forms
 
         private static List<string[]> filePath = new List<string[]>();
 
+        private static List<string[]> DecodedStrings = new List<string[]>();
+
         private static string ScriptFolderPath;
 
         private static string BinFolderPath;
@@ -115,6 +117,7 @@ namespace Cheat_Engine_Tools.Forms
 
         private void DecodeStrings()
         {
+            DecodedStrings.Clear();
             ProgressBarCount = 0;
             var stopwatch = new Stopwatch();
             stopwatch.Start();
@@ -134,7 +137,9 @@ namespace Cheat_Engine_Tools.Forms
                             string result = Regex.Replace(originalText, regexPattern, m =>
                             {
                                 int value = -(Convert.ToInt32(m.Groups[1].Value));
+                                Console.WriteLine(Class_2.GetDefinitionName(value, binaryDatas));
                                 return WrapperLeft_TextBox.Text + Class_2.GetDefinitionName(value, binaryDatas) + WrapperRight_TextBox.Text;
+
                             });
                             File.WriteAllText(path[i].Remove(path[i].Length - 3) + "___DECODED.as", result);
                             fileCount++;

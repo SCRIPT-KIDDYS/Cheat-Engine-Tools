@@ -40,6 +40,7 @@
             this.othersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dLLInjectorMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.warCommanderStringDecoderMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.warCommanderSWFDumperMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linksMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,6 +53,7 @@
             // 
             this.StyleManager.Owner = this;
             this.StyleManager.Style = MetroFramework.MetroColorStyle.Teal;
+            this.StyleManager.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // MainWindowMenuStrip
             // 
@@ -118,7 +120,8 @@
             // 
             this.othersMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dLLInjectorMenuItem,
-            this.warCommanderStringDecoderMenuItem});
+            this.warCommanderStringDecoderMenuItem,
+            this.warCommanderSWFDumperMenuItem});
             this.othersMenuItem.Name = "othersMenuItem";
             this.othersMenuItem.Size = new System.Drawing.Size(54, 19);
             this.othersMenuItem.Text = "Others";
@@ -136,6 +139,13 @@
             this.warCommanderStringDecoderMenuItem.Size = new System.Drawing.Size(243, 22);
             this.warCommanderStringDecoderMenuItem.Text = "WarCommander String Decoder";
             this.warCommanderStringDecoderMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // warCommanderSWFDumperMenuItem
+            // 
+            this.warCommanderSWFDumperMenuItem.Name = "warCommanderSWFDumperMenuItem";
+            this.warCommanderSWFDumperMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.warCommanderSWFDumperMenuItem.Text = "WarCommander SWF Dumper";
+            this.warCommanderSWFDumperMenuItem.Click += new System.EventHandler(this.MenuItem_Click);
             // 
             // helpMenuItem
             // 
@@ -190,6 +200,7 @@
             this.Style = MetroFramework.MetroColorStyle.Teal;
             this.Text = "Cheat Engine Tools";
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
+            this.Theme = MetroFramework.MetroThemeStyle.Default;
             ((System.ComponentModel.ISupportInitialize)(this.StyleManager)).EndInit();
             this.MainWindowMenuStrip.ResumeLayout(false);
             this.MainWindowMenuStrip.PerformLayout();
@@ -214,5 +225,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aOBPatternFinderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem linksMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem warCommanderSWFDumperMenuItem;
     }
 }
